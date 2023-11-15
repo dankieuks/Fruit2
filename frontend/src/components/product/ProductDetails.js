@@ -10,9 +10,10 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getProductDetails, newReview, clearErrors } from '../../actions/productActions'
 import { addItemToCart } from '../../actions/cartActions'
 import { NEW_REVIEW_RESET } from '../../constants/productConstants'
+import { useHistory } from 'react-router-dom/cjs/react-router-dom'
 
 const ProductDetails = ({ match }) => {
-
+const next =useHistory()
     const [quantity, setQuantity] = useState(1)
     const [rating, setRating] = useState(0);
     const [comment, setComment] = useState('');
@@ -45,8 +46,12 @@ const ProductDetails = ({ match }) => {
     }, [dispatch, alert, error, reviewError, match.params.id, success])
 
     const addToCart = () => {
-        dispatch(addItemToCart(match.params.id, quantity));
+        if(user){
+            dispatch(addItemToCart(match.params.id, quantity));
         alert.success('Đã thêm vào giỏ hàng')
+        }else{
+            alert.error('Bạn cần đăng nhập để thêm vào giỏ hàng!')
+        }
     }
 
     const increaseQty = () => {
