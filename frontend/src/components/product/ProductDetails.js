@@ -156,7 +156,6 @@ const next =useHistory()
                                 <span className="btn btn-primary plus" onClick={increaseQty}>+</span>
                             </div>
                             <button type="button" id="cart_btn" className="btn btn-primary d-inline ml-4" disabled={product.stock === 0} onClick={addToCart}>Thêm vào giỏ hàng</button>
-
                             <hr />
                             <p>Tình trạng hàng: <span id="stock_status" className={product.stock > 0 ? 'greenColor' : 'redColor'} >{product.stock > 0 ? 'Còn hàng' : 'Hết hàng'}</span></p>
 
