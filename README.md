@@ -23,8 +23,7 @@ Chú ý: Nhấn các lệnh theo tuần tự
 ```
 npm install (thư mục gốc - chứ hai thư mục frontend và backend)
 
-cd frontend
-npm install
+
 ```
 
 ### Hướng dẫn chạy chương trình (frontend & backend)
