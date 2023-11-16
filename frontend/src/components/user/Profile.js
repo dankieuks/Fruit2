@@ -27,6 +27,7 @@ const Profile = () => {
                         </div>
 
                         <div className="col-12 col-md-6">
+                            
                             <div className="profile-details p-4  border-primary rounded" style={{ marginBottom: '20px', border: '2px solid #002af7 ' }}>
                                 <h2 className="text-center mb-4">Thông tin cá nhân</h2>
 
