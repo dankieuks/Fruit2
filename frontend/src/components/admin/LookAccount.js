@@ -60,8 +60,6 @@ const LookAccount = ({ history, match }) => {
 
         dispatch(updateUser(user._id, formData))
     }
-
-
     return (
         <Fragment>
             <MetaData title={`Update User`} />
