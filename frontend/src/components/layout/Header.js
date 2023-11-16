@@ -23,6 +23,7 @@ const Header = () => {
         window.location.reload();
     };
 
+    
     return (
         <Fragment>
             <nav className="navbar row">
