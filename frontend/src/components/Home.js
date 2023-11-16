@@ -33,13 +33,15 @@ const Home = ({ match }) => {
         'Thực phẩm chế biến',
         'Thực phẩm đông lạnh',
         'Thực phẩm Khô - Gia Vị',
+        // 'Chăm sóc mẹ và bé',
+        // 'Thể thao'
+    ]
+    const categories2 = [
         'Bánh kẹo - Đồ ăn vặt',
         "Sữa - Sản phẩm từ sữa",
         'Đồ uống - Giải khát',
         'Hóa Mỹ phẩm',
         'Chăm sóc cá nhân',
-        // 'Chăm sóc mẹ và bé',
-        // 'Thể thao'
     ]
 
     const alert = useAlert();
@@ -88,10 +90,23 @@ const Home = ({ match }) => {
                         >
                             <div className="button">
                                 <p className="btnText">{category}</p>
-                                <div className="btnTwo">
-                                    <p className="btnText2">Chọn!</p>
-                                </div>
+                            </div>
 
+                        </li>
+                    ))}
+                </ul>
+                <ul id="ul_top_hypers">
+                    {categories2.map(category => (
+                        <li
+                            style={{
+                                cursor: 'pointer',
+                                listStyleType: 'none'
+                            }}
+                            key={category}
+                            onClick={() => setCategory(category)}
+                        >
+                            <div className="button">
+                                <p className="btnText">{category}</p>
                             </div>
 
                         </li>
@@ -114,8 +129,7 @@ const Home = ({ match }) => {
                     <h3 className='text-center'>Sản phẩm</h3>
 
                     <section id="products" className="container mt-5">
-                        {<div className="row">
-
+                        {<div className="row" >
                             {keyword ? (
                                 <Fragment>
                                     <div className="col-6 col-md-3 mt-5 mb-5">
@@ -140,7 +154,7 @@ const Home = ({ match }) => {
                                                 value={price}
                                                 onChange={price => setPrice(price)}
                                             />
-                                            <br/>
+                                            <br />
                                             <hr className="my-3" />
 
                                             <div className="mt-5">
@@ -177,14 +191,14 @@ const Home = ({ match }) => {
                                     <div className="col-6 col-md-9">
                                         <div className="row">
                                             {products.map(product => (
-                                                <Product key={product._id} product={product} col={4} />
+                                                <Product key={product._id} product={product} col={5} />
                                             ))}
                                         </div>
                                     </div>
                                 </Fragment>
                             ) : (
                                 products.map(product => (
-                                    <Product key={product._id} product={product} col={3}/>
+                                    <Product key={product._id} product={product} col={3} />
                                 ))
                             )}
 

@@ -27,8 +27,9 @@ body {
 }
 
 nav {
-  background-color: #232f3e;
+  background-color: #4a69bd;
   padding: 1rem 1rem;
+  display: flex;
 }
 
 #search_btn {
@@ -120,7 +121,7 @@ nav {
 
 /* Footer */
 footer {
-  margin-top: 11rem;
+  /* margin-top: 11rem; */
   color: grey;
   bottom: 0;
   width: 100%;
@@ -193,6 +194,10 @@ footer {
 
 #product_image {
   margin-top: 9rem;
+}
+
+.col-lg-3 {
+  width: 20% !important;
 }
 
 /* Loader */
@@ -702,9 +707,20 @@ ul.CTAs a {
   margin-bottom: 20px;
 }
 
+.container-fluid {
+  width: 300px;
+}
+
+#ul_top_hypers {
+  display: flex;
+  justify-content: center;
+}
+
 #ul_top_hypers li {
-  display: inline;
-  float: right;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* button */
@@ -722,6 +738,9 @@ ul.CTAs a {
 }
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #2366be;
   margin: 20px auto;
   width: 200px;
@@ -748,6 +767,7 @@ ul.CTAs a {
 .btnText {
   color: white;
   transition: .3s;
+  margin: 0;
 }
 
 .btnText2 {
@@ -756,13 +776,11 @@ ul.CTAs a {
   color: #FFF;
 }
 
-.button:hover .btnTwo {
-  left: -130px;
+.button:hover {
+  background-color: #f39c12;
 }
 
-.button:hover .btnText {
-  margin-left: 65px;
-}
+.button:hover .btnText {}
 
 .button:active {
   box-shadow: 0px 5

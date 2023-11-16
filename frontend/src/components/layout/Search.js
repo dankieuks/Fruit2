@@ -21,7 +21,7 @@ const Search = ({ history }) => {
                     type="text"
                     id="search_field"
                     className="form-control"
-                    placeholder="Điển tên sản phẩm cần tìm ..."
+                    placeholder="Nhập tên sản phẩm cần tìm..."
                     onChange={(e) => setKeyword(e.target.value)}
                 />
                 <div className="input-group-append">

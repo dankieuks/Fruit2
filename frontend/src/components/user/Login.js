@@ -41,7 +41,7 @@ const Login = ({ history, location }) => {
                 <Fragment>
                     <MetaData title={'Login'} />
 
-                    <div className="container mt-5">
+                    <div className="container mt-5" style={{marginBottom: '50px'}}>
                         <div className="row justify-content-center">
                             <div className="col-md-5 mt-5">
                                 <form className="shadow-lg p-4 bg-white" onSubmit={submitHandler}>

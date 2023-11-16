@@ -26,10 +26,10 @@ const Footer = () => {
                 <div className="single-footer links">
                   <h4>Thông tin</h4>
                   <ul>
-                    <li><Link to=''>Về chúng tôi</Link></li>
-                    <li><Link to=''>Điều khoản và điều kiện</Link></li>
-                    <li><Link to=''>Liên hệ với chúng tôi</Link></li>
-                    <li><Link to=''>Giúp đỡ</Link></li>
+                    <li>Về chúng tôi</li>
+                    <li>Điều khoản và điều kiện</li>
+                    <li>Liên hệ với chúng tôi</li>
+                    <li>Giúp đỡ</li>
                   </ul>
                 </div>
                 {/* End Single Widget */}
@@ -39,10 +39,10 @@ const Footer = () => {
                 <div className="single-footer links">
                   <h4>Dịch vụ khách hàng</h4>
                   <ul>
-                    <li><Link to=''>Phương thức thanh toán</Link></li>
-                    <li><Link to=''>Hoàn tiền</Link></li>
-                    <li><Link to=''>Giao hàng</Link></li>
-                    <li><Link to=''>Điều khoản và bảo mật</Link></li>
+                    <li>Phương thức thanh toán</li>
+                    <li>Hoàn tiền</li>
+                    <li>Giao hàng</li>
+                    <li>Điều khoản và bảo mật</li>
                   </ul>
                 </div>
                 {/* End Single Widget */}
