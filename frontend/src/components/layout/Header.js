@@ -18,8 +18,10 @@ const Header = () => {
 
     const logoutHandler = () => {
         dispatch(logout());
-        alert.success('Đăng xuất thành công')
-    }
+        alert.success("Đăng xuất thành công");
+        localStorage.removeItem("cartItems");
+        window.location.reload();
+    };
 
     return (
         <Fragment>
@@ -40,7 +42,7 @@ const Header = () => {
                     {user && user.role === 'admin' ? (
                         <p></p>
                     ) : (
-                        
+
                         <Link to="/cart" style={{ textDecoration: 'none' }} >
                             <span id="cart" className="ml-3">Giỏ hàng</span>
                             <span className="ml-1" id="cart_count"><i class="bi bi-cart4"></i>{cartItems.length}</span>

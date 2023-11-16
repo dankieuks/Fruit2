@@ -16,8 +16,8 @@ const Footer = () => {
                   <div className="logo">
                     <a href="index.html"><img src="/images/logo.png" alt="#" /></a>
                   </div>
-                  <p className="text">Website bán hàng trực tuyến của Thắng Long Store, hỗ trợ 24/7 cùng nhiều ưu đẫi hấp dẫn. Luôn luôn cập nhật mới nhiều sản phẩm.</p>
-                  <p className="text">Cần hỗ trợ liên hệ với chúng tôi: <span><a href="tel:123456789">+0123 456 789</a></span></p>
+                  <p className="text">Chào mừng bạn đến với Thủ Lĩnh Store - Trải nghiệm mua sắm trực tuyến hoàn hảo! Chúng tôi tự hào cung cấp dịch vụ hỗ trợ 24/7, đồng thời mang đến những ưu đãi hấp dẫn và không ngừng cập nhật sản phẩm mới. Hãy khám phá thế giới mua sắm đa dạng và độc đáo tại trang web của chúng tôi ngay hôm nay.</p>
+                  <p className="text">Cần hỗ trợ liên hệ với chúng tôi: <span><a href="tel:0358751727">+84358751727</a></span></p>
                 </div>
                 {/* End Single Widget */}
               </div>
@@ -55,9 +55,9 @@ const Footer = () => {
                   <div className="contact">
                     <ul>
                       <li>Số 263 Dã Tượng, Nha Trang, Khánh Hòa</li>
-                      <li>Nhóm 3</li>
+                      <li>Nhóm 5</li>
                       <li>info@tltore.com</li>
-                      <li>+012 3456 7890</li>
+                      <li>+84358751727</li>
                     </ul>
                   </div>
                   {/* End Single Widget */}
@@ -76,7 +76,7 @@ const Footer = () => {
               <div className="row">
                 <div className="col-lg-12 col-12">
                   <div className="text-center">
-                    <p>Copyright © 2022 By Nhóm 3</p>
+                    <p>Copyright © 2023 By Nhóm 5</p>
                   </div>
                 </div>
                 <div className="col-lg-6 col-12">
