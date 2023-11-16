@@ -45,6 +45,7 @@ const Profile = () => {
                                     padding: '5px',
                                     paddingLeft: '11px',
                                     borderRadius: '7px'
+
                                 }}>
                                     <div className="item-label">Email</div>
                                     <div className="item-value">{user.email}</div>
