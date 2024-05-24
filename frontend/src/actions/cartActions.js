@@ -7,6 +7,7 @@ import {
 
 export const addItemToCart = (id, quantity) => async (dispatch, getState) => {
   const { data } = await axios.get(`/api/v1/product/${id}`);
+<<<<<<< HEAD
   console.log(data);
   dispatch({
     type: ADD_TO_CART,
@@ -20,6 +21,21 @@ export const addItemToCart = (id, quantity) => async (dispatch, getState) => {
     },
   });
 
+=======
+
+  dispatch({
+    type: ADD_TO_CART,
+    payload: {
+      product: data.product._id,
+      name: data.product.name,
+      price: data.product.price,
+      image: data.product.images[0].url,
+      stock: data.product.stock,
+      quantity,
+    },
+  });
+
+>>>>>>> 2a2594f48c0b67a2e82cdd0c9c89dc5843287d4e
   localStorage.setItem("cartItems", JSON.stringify(getState().cart.cartItems));
 };
 
