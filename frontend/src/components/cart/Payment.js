@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 
 import MetaData from "../layout/MetaData";
 import CheckoutSteps from "./CheckoutSteps";
@@ -33,6 +33,9 @@ const options = {
 
 const Payment = ({ history }) => {
   const alert = useAlert();
+  const [pricePaid, setPricePaid] = useState(null);
+  const [contentPaid, setContentPaid] = useState(null);
+
   const stripe = useStripe();
   const elements = useElements();
   const dispatch = useDispatch();
@@ -136,7 +139,42 @@ const Payment = ({ history }) => {
     ACCOUNT_NO: "3200368278483",
     ACCOUNT_NAME: "DO VAN CHUYEN",
   };
+
   const QR = `https://img.vietqr.io/image/${MY_BANK.BANK_ID}-${MY_BANK.ACCOUNT_NO}-compact2.png?amount=${orderInfo.totalPrice}&addInfo=DTBV${user._id}${orderInfo._id}&accountName=${MY_BANK.ACCOUNT_NAME}`;
+  const checkPaid = () => {
+    axios
+      .get(
+        "https://script.google.com/macros/s/AKfycbx3wKJ32LukcVALYo1j6-vN5zj7d8pyPPCnH9vtTALjzcSC1vc7xHeyUfSrtLISZ1zp/exec"
+      )
+      .then((res) => {
+        const paid = res.data.data[res.data.data.length - 1];
+        setPricePaid(paid["Giá trị"]);
+        setContentPaid(paid["Mô tả"]);
+      })
+      .catch((error) => {
+        console.error("API call error:", error);
+      });
+  };
+  useEffect(() => {
+    // checkPaid();
+    let intervalId: any;
+    intervalId = setInterval(() => {
+      checkPaid();
+    }, 2000);
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+  useEffect(() => {
+    if (
+      pricePaid === orderInfo.totalPrice &&
+      contentPaid?.split(" ")[0] === `DTBV${user._id}${orderInfo._id}`
+    ) {
+      history.push("/success");
+
+      // clearInterval(intervalId);
+    }
+  }, [pricePaid, contentPaid]);
   return (
     <div>
       <h3 className="title-checkqr">Thanh toán</h3>
