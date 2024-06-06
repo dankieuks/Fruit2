@@ -30,7 +30,6 @@ nav {
   background-color: #4a69bd;
   padding: 1rem 1rem;
   display: flex;
-  align-items: center;
 }
 
 #search_btn {
@@ -220,7 +219,7 @@ nav {
 
 /* Footer */
 footer {
-  margin-top: 8rem;
+  /* margin-top: 11rem; */
   color: grey;
   bottom: 0;
   width: 100%;
@@ -293,6 +292,10 @@ footer {
 
 #product_image {
   margin-top: 9rem;
+}
+
+.col-lg-3 {
+  width: 20% !important;
 }
 
 /* Loader */
@@ -801,9 +804,11 @@ ul.CTAs a {
 .chartTitle {
   margin-bottom: 20px;
 }
+
 .container-fluid {
   width: 300px;
 }
+
 #ul_top_hypers {
   display: flex;
   justify-content: center;
@@ -814,6 +819,7 @@ ul.CTAs a {
   justify-content: center;
   align-items: center;
 }
+
 /* button */
 #holder {
   background: white;
@@ -868,9 +874,6 @@ ul.CTAs a {
 
 .button:hover {
   background-color: #f39c12;
-}
-
-.button:hover .btnText {
 }
 
 .button:active {

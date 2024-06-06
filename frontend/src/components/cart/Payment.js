@@ -69,7 +69,6 @@ const Payment = ({ history }) => {
   const paymentData = {
     amount: Math.round(orderInfo.totalPrice * 100), // total price
   };
-  console.log("paymentData: ", paymentData);
 
   const submitHandler = async (e) => {
     e.preventDefault();

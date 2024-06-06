@@ -36,7 +36,7 @@ const Home = ({ match }) => {
         // 'Chăm sóc mẹ và bé',
         // 'Thể thao'
     ]
-    const categories2=[
+    const categories2 = [
         'Bánh kẹo - Đồ ăn vặt',
         "Sữa - Sản phẩm từ sữa",
         'Đồ uống - Giải khát',
@@ -129,7 +129,7 @@ const Home = ({ match }) => {
                     <h3 className='text-center'>Sản phẩm</h3>
 
                     <section id="products" className="container mt-5">
-                        {<div className="row">
+                        {<div className="row" >
                             {keyword ? (
                                 <Fragment>
                                     <div className="col-6 col-md-3 mt-5 mb-5">
@@ -154,7 +154,7 @@ const Home = ({ match }) => {
                                                 value={price}
                                                 onChange={price => setPrice(price)}
                                             />
-                                            <br/>
+                                            <br />
                                             <hr className="my-3" />
 
                                             <div className="mt-5">
@@ -191,14 +191,14 @@ const Home = ({ match }) => {
                                     <div className="col-6 col-md-9">
                                         <div className="row">
                                             {products.map(product => (
-                                                <Product key={product._id} product={product} col={4} />
+                                                <Product key={product._id} product={product} col={5} />
                                             ))}
                                         </div>
                                     </div>
                                 </Fragment>
                             ) : (
                                 products.map(product => (
-                                    <Product key={product._id} product={product} col={3}/>
+                                    <Product key={product._id} product={product} col={3} />
                                 ))
                             )}
 
