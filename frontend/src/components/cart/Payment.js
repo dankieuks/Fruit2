@@ -6,10 +6,7 @@ import CheckoutSteps from "./CheckoutSteps";
 import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
 import { createOrder, clearErrors } from "../../actions/orderActions";
-<<<<<<< HEAD
-=======
 // import StyleCheckoutQR from "./PaymentStyled";
->>>>>>> 2a2594f48c0b67a2e82cdd0c9c89dc5843287d4e
 
 import {
   useStripe,
@@ -18,15 +15,10 @@ import {
   CardExpiryElement,
   CardCvcElement,
 } from "@stripe/react-stripe-js";
-<<<<<<< HEAD
-
-import axios from "axios";
-=======
 import moment from "moment";
 
 import axios from "axios";
 import { use } from "express/lib/application";
->>>>>>> 2a2594f48c0b67a2e82cdd0c9c89dc5843287d4e
 
 const options = {
   style: {
@@ -47,29 +39,6 @@ const Payment = ({ history }) => {
   const stripe = useStripe();
   const elements = useElements();
   const dispatch = useDispatch();
-<<<<<<< HEAD
-
-  const { user } = useSelector((state) => state.auth);
-  const { cartItems, shippingInfo } = useSelector((state) => state.cart);
-
-  const { error } = useSelector((state) => state.newOrder);
-
-  useEffect(() => {
-    if (error) {
-      alert.error(error);
-      dispatch(clearErrors());
-    }
-  }, [dispatch, alert, error]);
-
-  // cart, ship info
-  const order = {
-    orderItems: cartItems,
-    shippingInfo,
-  };
-
-  const orderInfo = JSON.parse(sessionStorage.getItem("orderInfo"));
-  console.log(orderInfo);
-=======
   const today = moment();
   const { user } = useSelector((state) => state.auth);
 
@@ -90,7 +59,6 @@ const Payment = ({ history }) => {
   };
 
   const orderInfo = JSON.parse(sessionStorage.getItem("orderInfo"));
->>>>>>> 2a2594f48c0b67a2e82cdd0c9c89dc5843287d4e
   if (orderInfo) {
     order.itemsPrice = orderInfo.itemsPrice;
     order.shippingPrice = orderInfo.shippingPrice;
@@ -166,60 +134,6 @@ const Payment = ({ history }) => {
       alert.error(error.response.data.message);
     }
   };
-<<<<<<< HEAD
-
-  return (
-    <Fragment>
-      <MetaData title={"Thông tin thẻ"} />
-
-      <CheckoutSteps shipping confirmOrder payment />
-
-      <div className="row wrapper">
-        <div className="col-10 col-lg-5">
-          <form className="shadow-lg" onSubmit={submitHandler}>
-            <h1 className="mb-4">Thông tin thẻ</h1>
-            <div className="form-group">
-              <label htmlFor="card_num_field">Số thẻ</label>
-              <CardNumberElement
-                type="text"
-                id="card_num_field"
-                className="form-control"
-                options={options}
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="card_exp_field">Hạn thẻ</label>
-              <CardExpiryElement
-                type="text"
-                id="card_exp_field"
-                className="form-control"
-                options={options}
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="card_cvc_field">Số CVC</label>
-              <CardCvcElement
-                type="text"
-                id="card_cvc_field"
-                className="form-control"
-                options={options}
-              />
-            </div>
-
-            <button id="pay_btn" type="submit" className="btn btn-block py-3">
-              Thanh toán{" "}
-              {` - ${(orderInfo && orderInfo.totalPrice).toLocaleString()}`}đ
-            </button>
-          </form>
-        </div>
-      </div>
-    </Fragment>
-  );
-};
-
-=======
   const MY_BANK = {
     BANK_ID: "MB",
     ACCOUNT_NO: "3200368278483",
@@ -243,7 +157,7 @@ const Payment = ({ history }) => {
   };
   useEffect(() => {
     // checkPaid();
-    let intervalId: any;
+    let intervalId;
     intervalId = setInterval(() => {
       checkPaid();
     }, 2000);
@@ -500,5 +414,4 @@ const Payment = ({ history }) => {
   );
 };
 
->>>>>>> 2a2594f48c0b67a2e82cdd0c9c89dc5843287d4e
 export default Payment;

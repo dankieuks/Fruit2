@@ -171,11 +171,15 @@ nav {
 }
 
 .card {
-  height: 100%;
+  height: 370px !important;
 }
 
 .card-title a {
   color: #2e2e2e;
+  width: 100% !important;
+  white-space: nowrap; /* Không cho phép văn bản xuống dòng */
+  overflow: hidden; /* Ẩn phần văn bản tràn ra ngoài */
+  text-overflow: ellipsis; /* Hiển thị dấu ba chấm khi văn bản bị cắt */
 }
 
 .card-title a:hover {
