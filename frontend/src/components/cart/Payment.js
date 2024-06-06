@@ -151,8 +151,6 @@ const Payment = ({ history }) => {
         const paid = res.data.data[res.data.data.length - 1];
         setPricePaid(paid["Giá trị"]);
         setContentPaid(paid["Mô tả"]);
-
-        history.push("/success");
       })
       .catch((error) => {
         console.error("API call error:", error);
@@ -173,7 +171,8 @@ const Payment = ({ history }) => {
       pricePaid === orderInfo.totalPrice &&
       contentPaid?.split(" ")[0] === `DTBV${user._id}`
     ) {
-      submitHandler();
+      // submitHandler();
+      history.push("/success");
 
       // clearInterval(intervalId);
     }
