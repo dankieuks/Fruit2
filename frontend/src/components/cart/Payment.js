@@ -35,7 +35,6 @@ const Payment = ({ history }) => {
   const alert = useAlert();
   const [pricePaid, setPricePaid] = useState(null);
   const [contentPaid, setContentPaid] = useState(null);
-
   const stripe = useStripe();
   const elements = useElements();
   const dispatch = useDispatch();
@@ -58,6 +57,7 @@ const Payment = ({ history }) => {
     shippingInfo,
   };
 
+  console.log("order: ", order);
   const orderInfo = JSON.parse(sessionStorage.getItem("orderInfo"));
   if (orderInfo) {
     order.itemsPrice = orderInfo.itemsPrice;
@@ -140,7 +140,7 @@ const Payment = ({ history }) => {
     ACCOUNT_NAME: "DO VAN CHUYEN",
   };
 
-  const QR = `https://img.vietqr.io/image/${MY_BANK.BANK_ID}-${MY_BANK.ACCOUNT_NO}-compact2.png?amount=${orderInfo.totalPrice}&addInfo=DTBV${user._id}${orderInfo._id}&accountName=${MY_BANK.ACCOUNT_NAME}`;
+  const QR = `https://img.vietqr.io/image/${MY_BANK.BANK_ID}-${MY_BANK.ACCOUNT_NO}-compact2.png?amount=${orderInfo.totalPrice}&addInfo=DTBV${user._id}&accountName=${MY_BANK.ACCOUNT_NAME}`;
   const checkPaid = () => {
     axios
       .get(
@@ -150,6 +150,8 @@ const Payment = ({ history }) => {
         const paid = res.data.data[res.data.data.length - 1];
         setPricePaid(paid["Giá trị"]);
         setContentPaid(paid["Mô tả"]);
+
+        history.push("/success");
       })
       .catch((error) => {
         console.error("API call error:", error);
@@ -168,9 +170,9 @@ const Payment = ({ history }) => {
   useEffect(() => {
     if (
       pricePaid === orderInfo.totalPrice &&
-      contentPaid?.split(" ")[0] === `DTBV${user._id}${orderInfo._id}`
+      contentPaid?.split(" ")[0] === `DTBV${user._id}`
     ) {
-      history.push("/success");
+      submitHandler();
 
       // clearInterval(intervalId);
     }
@@ -182,11 +184,7 @@ const Payment = ({ history }) => {
         <p className="thanks">Cảm ơn bạn. Đơn hàng của bạn đã được nhận.</p>
         <ul className="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
           <li className="woocommerce-order-overview__order order">
-            Mã đơn hàng:{" "}
-            <strong>
-              DTBV{user._id}
-              {orderInfo._id}
-            </strong>
+            Mã đơn hàng: <strong>DTBV{user._id}</strong>
           </li>
           <li className="woocommerce-order-overview__date date">
             Ngày: <strong>{today.format("DD-MM-yyyy")}</strong>
@@ -285,10 +283,7 @@ const Payment = ({ history }) => {
                   className="text-left payment-instruction "
                   style={{ textAlign: "left" }}
                 >
-                  <strong style={{ fontSize: "20px" }}>
-                    DTBV{user._id}
-                    {orderInfo._id}
-                  </strong>
+                  <strong style={{ fontSize: "20px" }}>DTBV{user._id}</strong>
                 </td>
               </tr>
             </tbody>
