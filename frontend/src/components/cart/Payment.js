@@ -35,6 +35,7 @@ const Payment = ({ history }) => {
   const alert = useAlert();
   const [pricePaid, setPricePaid] = useState(null);
   const [contentPaid, setContentPaid] = useState(null);
+  const [random, setRandom] = useState(null);
   const stripe = useStripe();
   const elements = useElements();
   const dispatch = useDispatch();
@@ -57,18 +58,20 @@ const Payment = ({ history }) => {
     shippingInfo,
   };
 
-  console.log("order: ", order);
   const orderInfo = JSON.parse(sessionStorage.getItem("orderInfo"));
   if (orderInfo) {
     order.itemsPrice = orderInfo.itemsPrice;
     order.shippingPrice = orderInfo.shippingPrice;
-    order.taxPrice = orderInfo.taxPrice;
+    // order.taxPrice = orderInfo.taxPrice;
     order.totalPrice = orderInfo.totalPrice;
   }
 
   const paymentData = {
     amount: Math.round(orderInfo.totalPrice * 100), // total price
   };
+  useEffect(() => {
+    setRandom(Math.floor(1000 + Math.random() * 9000));
+  }, []);
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -136,22 +139,20 @@ const Payment = ({ history }) => {
   };
   const MY_BANK = {
     BANK_ID: "MB",
-    ACCOUNT_NO: "3200368278483",
-    ACCOUNT_NAME: "DO VAN CHUYEN",
+    ACCOUNT_NO: "0358751727",
+    ACCOUNT_NAME: "NGUYEN THANH TRUNG",
   };
 
-  const QR = `https://img.vietqr.io/image/${MY_BANK.BANK_ID}-${MY_BANK.ACCOUNT_NO}-compact2.png?amount=${orderInfo.totalPrice}&addInfo=DTBV${user._id}&accountName=${MY_BANK.ACCOUNT_NAME}`;
+  const QR = `https://img.vietqr.io/image/${MY_BANK.BANK_ID}-${MY_BANK.ACCOUNT_NO}-compact2.png?amount=${orderInfo.totalPrice}&addInfo=DTBV${user._id}${random}&accountName=${MY_BANK.ACCOUNT_NAME}`;
   const checkPaid = () => {
     axios
       .get(
-        "https://script.google.com/macros/s/AKfycbx3wKJ32LukcVALYo1j6-vN5zj7d8pyPPCnH9vtTALjzcSC1vc7xHeyUfSrtLISZ1zp/exec"
+        "https://script.google.com/macros/s/AKfycbx0tSUnFN3O_PL6Rw2Yf2VseVOK2-8VYi5mUk56sVfmOoTplCPEm78dEIGHwP33srJd/exec"
       )
       .then((res) => {
         const paid = res.data.data[res.data.data.length - 1];
         setPricePaid(paid["Giá trị"]);
         setContentPaid(paid["Mô tả"]);
-
-        history.push("/success");
       })
       .catch((error) => {
         console.error("API call error:", error);
@@ -167,13 +168,20 @@ const Payment = ({ history }) => {
       clearInterval(intervalId);
     };
   }, []);
+  console.log(
+    pricePaid === orderInfo.totalPrice &&
+      contentPaid?.replace("Thanh toan QR-", "").split(" ")[0] ===
+        `DTBV${user._id}${random}`
+  );
   useEffect(() => {
     if (
       pricePaid === orderInfo.totalPrice &&
-      contentPaid?.split(" ")[0] === `DTBV${user._id}`
+      contentPaid?.replace("Thanh toan QR-", "").split(" ")[0] ===
+        `DTBV${user._id}${random}`
     ) {
-      submitHandler();
-
+      dispatch(createOrder(order));
+      // submitHandler();
+      history.push("/success");
       // clearInterval(intervalId);
     }
   }, [pricePaid, contentPaid]);
@@ -283,7 +291,10 @@ const Payment = ({ history }) => {
                   className="text-left payment-instruction "
                   style={{ textAlign: "left" }}
                 >
-                  <strong style={{ fontSize: "20px" }}>DTBV{user._id}</strong>
+                  <strong style={{ fontSize: "20px" }}>
+                    DTBV{user._id}
+                    {random}
+                  </strong>
                 </td>
               </tr>
             </tbody>
