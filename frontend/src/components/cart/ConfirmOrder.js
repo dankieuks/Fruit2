@@ -6,6 +6,7 @@ import CheckoutSteps from "./CheckoutSteps";
 
 import { useSelector, useDispatch } from "react-redux";
 import { processPaymentMomo } from "../../actions/paymentActions";
+import { createOrder } from "../../actions/orderActions"; // Import createOrder action
 
 const ConfirmOrder = ({ history }) => {
   const dispatch = useDispatch();
@@ -28,7 +29,6 @@ const ConfirmOrder = ({ history }) => {
     const orderInfo = {
       itemsPrice: formatToNumber(itemsPrice),
       shippingPrice: formatToNumber(shippingPrice),
-
       totalPrice: formatToNumber(totalPrice),
       paymentMethod,
     };
@@ -38,7 +38,20 @@ const ConfirmOrder = ({ history }) => {
     if (paymentMethod === "momo") {
       dispatch(processPaymentMomo(orderInfo));
     } else if (paymentMethod === "cod") {
-      // Handle Cash on Delivery (COD)
+      const order = {
+        orderItems: cartItems,
+        shippingInfo,
+        itemsPrice: orderInfo.itemsPrice,
+        shippingPrice: orderInfo.shippingPrice,
+        totalPrice: orderInfo.totalPrice,
+        paymentMethod: "COD",
+        paymentInfo: {
+          id: "COD",
+          status: "Not Paid",
+        },
+      };
+
+      dispatch(createOrder(order));
       history.push("/success");
     } else {
       history.push("/payment");
@@ -69,9 +82,9 @@ const ConfirmOrder = ({ history }) => {
           <h4 className="mt-4">Các mặt hàng trong giỏ hàng của bạn:</h4>
 
           {cartItems.map((item) => (
-            <Fragment>
+            <Fragment key={item.product}>
               <hr />
-              <div className="cart-item my-1" key={item.product}>
+              <div className="cart-item my-1">
                 <div className="row">
                   <div className="col-4 col-lg-2">
                     <img src={item.image} alt="Laptop" height="45" width="65" />
@@ -153,6 +166,5 @@ const ConfirmOrder = ({ history }) => {
     </Fragment>
   );
 };
-
 
 export default ConfirmOrder;
