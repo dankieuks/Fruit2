@@ -168,11 +168,7 @@ const Payment = ({ history }) => {
       clearInterval(intervalId);
     };
   }, []);
-  console.log(
-    pricePaid === orderInfo.totalPrice &&
-      contentPaid?.replace("Thanh toan QR-", "").split(" ")[0] ===
-        `DTBV${user._id}${random}`
-  );
+
   useEffect(() => {
     if (
       pricePaid === orderInfo.totalPrice &&

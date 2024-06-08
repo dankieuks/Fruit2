@@ -3,15 +3,22 @@ import { Link } from "react-router-dom";
 
 import MetaData from "../layout/MetaData";
 import CheckoutSteps from "./CheckoutSteps";
+import { createOrder, clearErrors } from "../../actions/orderActions";
 
 import { useSelector, useDispatch } from "react-redux";
-import { processPaymentMomo } from "../../actions/paymentActions";
+import {
+  processPaymentMomo,
+  processPaymentZalo,
+} from "../../actions/paymentActions";
 
 const ConfirmOrder = ({ history }) => {
   const dispatch = useDispatch();
   const { cartItems, shippingInfo } = useSelector((state) => state.cart);
   const { user } = useSelector((state) => state.auth);
-
+  const order = {
+    orderItems: cartItems,
+    shippingInfo,
+  };
   const itemsPrice = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0
@@ -37,7 +44,11 @@ const ConfirmOrder = ({ history }) => {
 
     if (paymentMethod === "momo") {
       dispatch(processPaymentMomo(orderInfo));
+    } else if (paymentMethod === "zalopay") {
+      dispatch(processPaymentZalo(orderInfo));
     } else if (paymentMethod === "cod") {
+      dispatch(createOrder(order));
+
       // Handle Cash on Delivery (COD)
       history.push("/success");
     } else {
@@ -153,6 +164,5 @@ const ConfirmOrder = ({ history }) => {
     </Fragment>
   );
 };
-
 
 export default ConfirmOrder;
