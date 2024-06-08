@@ -1,1 +1,1261 @@
-[{"D:\\tạp hoá\\Fruit2\\frontend\\src\\index.js":"1","D:\\tạp hoá\\Fruit2\\frontend\\src\\store.js":"2","D:\\tạp hoá\\Fruit2\\frontend\\src\\App.js":"3","D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\productReducers.js":"4","D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\cartReducers.js":"5","D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\userReducers.js":"6","D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\orderReducers.js":"7","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\Cart.js":"8","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\Home.js":"9","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Footer.js":"10","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Header.js":"11","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\OrderSuccess.js":"12","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\Shipping.js":"13","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\product\\ProductDetails.js":"14","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\Payment.js":"15","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\order\\OrderDetails.js":"16","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\Login.js":"17","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\UpdateProfile.js":"18","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\ConfirmOrder.js":"19","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\Profile.js":"20","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\LookAccount.js":"21","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\order\\ListOrders.js":"22","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\NewProduct.js":"23","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\Dashboard.js":"24","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ProductsList.js":"25","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ProcessOrder.js":"26","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ProductReviews.js":"27","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\UpdateUser.js":"28","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\UsersList.js":"29","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\UpdateProduct.js":"30","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\route\\ProtectedRoute.js":"31","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\UpdatePassword.js":"32","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\OrdersList.js":"33","D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\userActions.js":"34","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\Register.js":"35","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\MetaData.js":"36","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\product\\Product.js":"37","D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\cartActions.js":"38","D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\productActions.js":"39","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Loader.js":"40","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Slider.js":"41","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Search.js":"42","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\CheckoutSteps.js":"43","D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\orderActions.js":"44","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\Sidebar.js":"45","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ChartIncome.js":"46","D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\userConstants.js":"47","D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\productConstants.js":"48","D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\orderConstants.js":"49","D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\cartConstants.js":"50","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\review\\ListReviews.js":"51","D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\paymentActions.js":"52","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\Chart.js":"53"},{"size":713,"mtime":1717780405804,"results":"54","hashOfConfig":"55"},{"size":1779,"mtime":1717780405805,"results":"56","hashOfConfig":"55"},{"size":5254,"mtime":1717780405797,"results":"57","hashOfConfig":"55"},{"size":7273,"mtime":1717780405805,"results":"58","hashOfConfig":"55"},{"size":1144,"mtime":1717780405804,"results":"59","hashOfConfig":"55"},{"size":6175,"mtime":1717780405805,"results":"60","hashOfConfig":"55"},{"size":4134,"mtime":1717780405804,"results":"61","hashOfConfig":"55"},{"size":6240,"mtime":1717780405800,"results":"62","hashOfConfig":"55"},{"size":9756,"mtime":1717780405798,"results":"63","hashOfConfig":"55"},{"size":3880,"mtime":1717780405801,"results":"64","hashOfConfig":"55"},{"size":3714,"mtime":1717867292119,"results":"65","hashOfConfig":"55"},{"size":1403,"mtime":1717867292118,"results":"66","hashOfConfig":"55"},{"size":4695,"mtime":1717780405801,"results":"67","hashOfConfig":"55"},{"size":13957,"mtime":1717780405802,"results":"68","hashOfConfig":"55"},{"size":14681,"mtime":1717780627552,"results":"69","hashOfConfig":"55"},{"size":4005,"mtime":1717780405802,"results":"70","hashOfConfig":"55"},{"size":3861,"mtime":1717780405803,"results":"71","hashOfConfig":"55"},{"size":5309,"mtime":1717780405803,"results":"72","hashOfConfig":"55"},{"size":5771,"mtime":1717869239691,"results":"73","hashOfConfig":"55"},{"size":3948,"mtime":1717780405803,"results":"74","hashOfConfig":"55"},{"size":4427,"mtime":1717780405799,"results":"75","hashOfConfig":"55"},{"size":2880,"mtime":1717780405802,"results":"76","hashOfConfig":"55"},{"size":8663,"mtime":1717780405799,"results":"77","hashOfConfig":"55"},{"size":13773,"mtime":1717780405799,"results":"78","hashOfConfig":"55"},{"size":5709,"mtime":1717780405800,"results":"79","hashOfConfig":"55"},{"size":6655,"mtime":1717780405800,"results":"80","hashOfConfig":"55"},{"size":5285,"mtime":1717780405800,"results":"81","hashOfConfig":"55"},{"size":4863,"mtime":1717780405800,"results":"82","hashOfConfig":"55"},{"size":4568,"mtime":1717780405800,"results":"83","hashOfConfig":"55"},{"size":9756,"mtime":1717780405800,"results":"84","hashOfConfig":"55"},{"size":951,"mtime":1717780405803,"results":"85","hashOfConfig":"55"},{"size":3036,"mtime":1717780405803,"results":"86","hashOfConfig":"55"},{"size":3958,"mtime":1717780405799,"results":"87","hashOfConfig":"55"},{"size":7204,"mtime":1717780405798,"results":"88","hashOfConfig":"55"},{"size":4293,"mtime":1717780405803,"results":"89","hashOfConfig":"55"},{"size":219,"mtime":1717780405801,"results":"90","hashOfConfig":"55"},{"size":1665,"mtime":1717780405802,"results":"91","hashOfConfig":"55"},{"size":1091,"mtime":1717780405797,"results":"92","hashOfConfig":"55"},{"size":6164,"mtime":1717780405798,"results":"93","hashOfConfig":"55"},{"size":209,"mtime":1717780405801,"results":"94","hashOfConfig":"55"},{"size":2265,"mtime":1717780405801,"results":"95","hashOfConfig":"55"},{"size":1066,"mtime":1717780405801,"results":"96","hashOfConfig":"55"},{"size":1870,"mtime":1717780405801,"results":"97","hashOfConfig":"55"},{"size":3274,"mtime":1717780405798,"results":"98","hashOfConfig":"55"},{"size":1214,"mtime":1717780405800,"results":"99","hashOfConfig":"55"},{"size":1334,"mtime":1717780405798,"results":"100","hashOfConfig":"55"},{"size":2264,"mtime":1717780405804,"results":"101","hashOfConfig":"55"},{"size":1946,"mtime":1717780405804,"results":"102","hashOfConfig":"55"},{"size":1186,"mtime":1717780405804,"results":"103","hashOfConfig":"55"},{"size":148,"mtime":1717780405804,"results":"104","hashOfConfig":"55"},{"size":1264,"mtime":1717780405802,"results":"105","hashOfConfig":"55"},{"size":2040,"mtime":1717869263530,"results":"106","hashOfConfig":"55"},{"size":783,"mtime":1717780405798,"results":"107","hashOfConfig":"55"},{"filePath":"108","messages":"109","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},"11ep8o9",{"filePath":"111","messages":"112","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"113","messages":"114","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"115","messages":"116","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"117","messages":"118","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"119","messages":"120","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"121","messages":"122","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"123","messages":"124","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"125","messages":"126","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"127","messages":"128","errorCount":0,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":0,"fixableWarningCount":0,"source":"129","usedDeprecatedRules":"110"},{"filePath":"130","messages":"131","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"132","messages":"133","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"134","messages":"135","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"136","messages":"137","errorCount":0,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":0,"fixableWarningCount":0,"source":"138","usedDeprecatedRules":"110"},{"filePath":"139","messages":"140","errorCount":0,"fatalErrorCount":0,"warningCount":9,"fixableErrorCount":0,"fixableWarningCount":0,"source":"141","usedDeprecatedRules":"110"},{"filePath":"142","messages":"143","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"144","messages":"145","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"146","messages":"147","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"148","messages":"149","errorCount":0,"fatalErrorCount":0,"warningCount":2,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"150","messages":"151","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"152","messages":"153","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"154","messages":"155","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"156","messages":"157","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"158","messages":"159","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"160","messages":"161","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"162","messages":"163","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"164","messages":"165","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"166","messages":"167","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"168","messages":"169","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"170","messages":"171","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"172","messages":"173","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"174","messages":"175","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"176","messages":"177","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"178","messages":"179","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"180","messages":"181","errorCount":0,"fatalErrorCount":0,"warningCount":2,"fixableErrorCount":0,"fixableWarningCount":0,"source":"182","usedDeprecatedRules":"110"},{"filePath":"183","messages":"184","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"185","messages":"186","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"187","messages":"188","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"189","messages":"190","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"191","messages":"192","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"193","messages":"194","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"195","messages":"196","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"197","messages":"198","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"199","messages":"200","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"201","messages":"202","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"203","messages":"204","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"205","messages":"206","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"207","messages":"208","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"209","messages":"210","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"211","messages":"212","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"213","messages":"214","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},{"filePath":"215","messages":"216","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"217","messages":"218","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"110"},"D:\\tạp hoá\\Fruit2\\frontend\\src\\index.js",[],["219","220"],"D:\\tạp hoá\\Fruit2\\frontend\\src\\store.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\App.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\productReducers.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\cartReducers.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\userReducers.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\orderReducers.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\Cart.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\Home.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Footer.js",["221"],"import React, { Fragment } from 'react'\r\nimport { Link } from 'react-router-dom'\r\n\r\nconst Footer = () => {\r\n  return (\r\n    <Fragment>\r\n      <footer className=\"footer\">\r\n        {/* Footer Top */}\r\n        <br/>\r\n        <div className=\"footer-top section\">\r\n          <div className=\"container\">\r\n            <div className=\"row\">\r\n              <div className=\"col-lg-5 col-md-6 col-12\">\r\n                {/* Single Widget */}\r\n                <div className=\"single-footer about\">\r\n                  <div className=\"logo\">\r\n                    <a href=\"index.html\"><img src=\"/images/logo.png\" alt=\"#\" /></a>\r\n                  </div>\r\n                  <p className=\"text\">Chào mừng bạn đến với Thủ Lĩnh Store - Trải nghiệm mua sắm trực tuyến hoàn hảo! Chúng tôi tự hào cung cấp dịch vụ hỗ trợ 24/7, đồng thời mang đến những ưu đãi hấp dẫn và không ngừng cập nhật sản phẩm mới. Hãy khám phá thế giới mua sắm đa dạng và độc đáo tại trang web của chúng tôi ngay hôm nay.</p>\r\n                  <p className=\"text\">Cần hỗ trợ liên hệ với chúng tôi: <span><a href=\"tel:0358751727\">+84358751727</a></span></p>\r\n                </div>\r\n                {/* End Single Widget */}\r\n              </div>\r\n              <div className=\"col-lg-2 col-md-6 col-12\">\r\n                {/* Single Widget */}\r\n                <div className=\"single-footer links\">\r\n                  <h4>Thông tin</h4>\r\n                  <ul>\r\n                    <li>Về chúng tôi</li>\r\n                    <li>Điều khoản và điều kiện</li>\r\n                    <li>Liên hệ với chúng tôi</li>\r\n                    <li>Giúp đỡ</li>\r\n                  </ul>\r\n                </div>\r\n                {/* End Single Widget */}\r\n              </div>\r\n              <div className=\"col-lg-2 col-md-6 col-12\">\r\n                {/* Single Widget */}\r\n                <div className=\"single-footer links\">\r\n                  <h4>Dịch vụ khách hàng</h4>\r\n                  <ul>\r\n                    <li>Phương thức thanh toán</li>\r\n                    <li>Hoàn tiền</li>\r\n                    <li>Giao hàng</li>\r\n                    <li>Điều khoản và bảo mật</li>\r\n                  </ul>\r\n                </div>\r\n                {/* End Single Widget */}\r\n              </div>\r\n              <div className=\"col-lg-3 col-md-6 col-12\">\r\n                {/* Single Widget */}\r\n                <div className=\"single-footer social\">\r\n                  <h4>Thông tin</h4>\r\n                  {/* Single Widget */}\r\n                  <div className=\"contact\">\r\n                    <ul>\r\n                      <li>Số 263 Dã Tượng, Nha Trang, Khánh Hòa</li>\r\n                      <li>Nhóm 5</li>\r\n                      <li>info@tltore.com</li>\r\n                      <li>+84358751727</li>\r\n                    </ul>\r\n                  </div>\r\n                  {/* End Single Widget */}\r\n                  <ul>\r\n                  </ul>\r\n                </div>\r\n                {/* End Single Widget */}\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        {/* End Footer Top */}\r\n        <div className=\"copyright\">\r\n          <div className=\"container\">\r\n            <div className=\"inner\">\r\n              <div className=\"row\">\r\n                <div className=\"col-lg-12 col-12\">\r\n                  <div className=\"text-center\">\r\n                    <p>Copyright © 2023 By Nhóm 5</p>\r\n                  </div>\r\n                </div>\r\n                <div className=\"col-lg-6 col-12\">\r\n                  <div className=\"right\">\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </footer>\r\n    </Fragment>\r\n  )\r\n}\r\n\r\nexport default Footer\r\n","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Header.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\OrderSuccess.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\Shipping.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\product\\ProductDetails.js",["222"],"import React, { Fragment, useState, useEffect } from \"react\";\r\nimport { Carousel } from \"react-bootstrap\";\r\n\r\nimport Loader from \"../layout/Loader\";\r\nimport MetaData from \"../layout/MetaData\";\r\nimport ListReviews from \"../review/ListReviews\";\r\n\r\nimport { useAlert } from \"react-alert\";\r\nimport { useDispatch, useSelector } from \"react-redux\";\r\nimport {\r\n  getProductDetails,\r\n  newReview,\r\n  clearErrors,\r\n} from \"../../actions/productActions\";\r\nimport { addItemToCart } from \"../../actions/cartActions\";\r\nimport { NEW_REVIEW_RESET } from \"../../constants/productConstants\";\r\nimport { useHistory } from \"react-router-dom/cjs/react-router-dom\";\r\n\r\nconst ProductDetails = ({ match }) => {\r\n  const next = useHistory();\r\n  const [quantity, setQuantity] = useState(1);\r\n  const [rating, setRating] = useState(0);\r\n  const [comment, setComment] = useState(\"\");\r\n\r\n  const dispatch = useDispatch();\r\n  const alert = useAlert();\r\n\r\n  const { loading, error, product } = useSelector(\r\n    (state) => state.productDetails\r\n  );\r\n  const { user } = useSelector((state) => state.auth);\r\n  const { error: reviewError, success } = useSelector(\r\n    (state) => state.newReview\r\n  );\r\n\r\n  useEffect(() => {\r\n    dispatch(getProductDetails(match.params.id));\r\n\r\n    if (error) {\r\n      alert.error(error);\r\n      dispatch(clearErrors());\r\n    }\r\n\r\n    if (reviewError) {\r\n      alert.error(reviewError);\r\n      dispatch(clearErrors());\r\n    }\r\n\r\n    if (success) {\r\n      alert.success(\"Đánh giá thành công\");\r\n      dispatch({ type: NEW_REVIEW_RESET });\r\n    }\r\n  }, [dispatch, alert, error, reviewError, match.params.id, success]);\r\n\r\n  const addToCart = () => {\r\n    if (user) {\r\n      dispatch(addItemToCart(match.params.id, quantity));\r\n      alert.success(\"Đã thêm vào giỏ hàng\");\r\n    } else {\r\n      alert.error(\"Bạn cần đăng nhập để thêm vào giỏ hàng!\");\r\n    }\r\n  };\r\n\r\n  const increaseQty = () => {\r\n    const count = document.querySelector(\".count\");\r\n\r\n    if (count.valueAsNumber >= product.stock) return;\r\n\r\n    const qty = count.valueAsNumber + 1;\r\n    setQuantity(qty);\r\n  };\r\n\r\n  const decreaseQty = () => {\r\n    const count = document.querySelector(\".count\");\r\n\r\n    if (count.valueAsNumber <= 1) return;\r\n\r\n    const qty = count.valueAsNumber - 1;\r\n    setQuantity(qty);\r\n  };\r\n\r\n  function setUserRatings() {\r\n    const stars = document.querySelectorAll(\".star\");\r\n\r\n    stars.forEach((star, index) => {\r\n      star.starValue = index + 1;\r\n\r\n      [\"click\", \"mouseover\", \"mouseout\"].forEach(function (e) {\r\n        star.addEventListener(e, showRatings);\r\n      });\r\n    });\r\n\r\n    function showRatings(e) {\r\n      stars.forEach((star, index) => {\r\n        if (e.type === \"click\") {\r\n          if (index < this.starValue) {\r\n            star.classList.add(\"orange\");\r\n\r\n            setRating(this.starValue);\r\n          } else {\r\n            star.classList.remove(\"orange\");\r\n          }\r\n        }\r\n\r\n        if (e.type === \"mouseover\") {\r\n          if (index < this.starValue) {\r\n            star.classList.add(\"yellow\");\r\n          } else {\r\n            star.classList.remove(\"yellow\");\r\n          }\r\n        }\r\n\r\n        if (e.type === \"mouseout\") {\r\n          star.classList.remove(\"yellow\");\r\n        }\r\n      });\r\n    }\r\n  }\r\n\r\n  const reviewHandler = () => {\r\n    const formData = new FormData();\r\n\r\n    formData.set(\"rating\", rating);\r\n    formData.set(\"comment\", comment);\r\n    formData.set(\"productId\", match.params.id);\r\n\r\n    dispatch(newReview(formData));\r\n  };\r\n  return (\r\n    <Fragment>\r\n      {loading ? (\r\n        <Loader />\r\n      ) : (\r\n        <Fragment>\r\n          <MetaData title={product.name} />\r\n          <div className=\"row d-flex justify-content-around\">\r\n            <div className=\"col-12 col-lg-5 img-fluid\" id=\"product_image\">\r\n              <Carousel pause=\"hover\">\r\n                {product.images &&\r\n                  product.images.map((image) => (\r\n                    <Carousel.Item key={image.public_id}>\r\n                      <img\r\n                        className=\"d-block w-100\"\r\n                        src={image.url}\r\n                        alt={product.title}\r\n                      />\r\n                    </Carousel.Item>\r\n                  ))}\r\n              </Carousel>\r\n            </div>\r\n\r\n            <div className=\"col-12 col-lg-5 mt-5\">\r\n              <h3>{product.name}</h3>\r\n              <hr />\r\n\r\n              <div className=\"rating-outer\">\r\n                <span id=\"no_of_reviews\">{product.ratings}</span>\r\n                <div\r\n                  className=\"rating-inner\"\r\n                  style={{ width: `${(product.ratings / 5) * 100}%` }}\r\n                ></div>\r\n              </div>\r\n              <span id=\"no_of_reviews\">({product.numOfReviews} đánh giá)</span>\r\n\r\n              <hr />\r\n              <p id=\"product_price\">{product.price}đ</p>\r\n              <div className=\"stockCounter d-inline\">\r\n                <span className=\"btn btn-danger minus\" onClick={decreaseQty}>\r\n                  -\r\n                </span>\r\n\r\n                <input\r\n                  type=\"number\"\r\n                  className=\"form-control count d-inline\"\r\n                  value={quantity}\r\n                  readOnly\r\n                />\r\n                <span className=\"btn btn-primary plus\" onClick={increaseQty}>\r\n                  +\r\n                </span>\r\n              </div>\r\n              <button\r\n                type=\"button\"\r\n                id=\"cart_btn\"\r\n                className=\"btn btn-primary d-inline ml-4\"\r\n                disabled={product.stock === 0}\r\n                onClick={addToCart}\r\n              >\r\n                Thêm vào giỏ hàng\r\n              </button>\r\n\r\n              <hr />\r\n              <p>\r\n                Tình trạng hàng:{\" \"}\r\n                <span\r\n                  id=\"stock_status\"\r\n                  className={product.stock > 0 ? \"greenColor\" : \"redColor\"}\r\n                >\r\n                  {product.stock > 0 ? product.stock : \"Hết hàng\"}\r\n                </span>\r\n              </p>\r\n\r\n              <hr />\r\n\r\n              <h4 className=\"mt-2\">Mô tả:</h4>\r\n              <p>{product.description}</p>\r\n              <hr />\r\n              <p id=\"product_seller mb-3\">\r\n                Xuất xứ: <strong>{product.seller}</strong>\r\n              </p>\r\n\r\n              {user ? (\r\n                <button\r\n                  id=\"review_btn\"\r\n                  type=\"button\"\r\n                  className=\"btn btn-primary mt-4\"\r\n                  data-toggle=\"modal\"\r\n                  data-target=\"#ratingModal\"\r\n                  onClick={setUserRatings}\r\n                >\r\n                  Bình luận sản phẩm\r\n                </button>\r\n              ) : (\r\n                <div className=\"alert alert-danger mt-5\" type=\"alert\">\r\n                  Bạn cần đăng nhập để có thể đánh giá được sản phẩm này.\r\n                </div>\r\n              )}\r\n\r\n              <div className=\"row mt-2 mb-5\">\r\n                <div className=\"rating w-50\">\r\n                  <div\r\n                    className=\"modal fade\"\r\n                    id=\"ratingModal\"\r\n                    tabIndex=\"-1\"\r\n                    role=\"dialog\"\r\n                    aria-labelledby=\"ratingModalLabel\"\r\n                    aria-hidden=\"true\"\r\n                  >\r\n                    <div className=\"modal-dialog\" role=\"document\">\r\n                      <div className=\"modal-content\">\r\n                        <div className=\"modal-header\">\r\n                          <h5 className=\"modal-title\" id=\"ratingModalLabel\">\r\n                            Đánh giá sản phẩm\r\n                          </h5>\r\n                          <button\r\n                            type=\"button\"\r\n                            className=\"close\"\r\n                            data-dismiss=\"modal\"\r\n                            aria-label=\"Close\"\r\n                          >\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                          </button>\r\n                        </div>\r\n\r\n\r\n                        <div className=\"col-12 col-lg-5 mt-5\">\r\n                            <h3>{product.name}</h3>\r\n                            <hr />\r\n\r\n                            <div className=\"rating-outer\">\r\n                                <span id=\"no_of_reviews\">{product.ratings}</span>\r\n                                <div className=\"rating-inner\" style={{ width: `${(product.ratings / 5) * 100}%` }}></div>\r\n                            </div>\r\n                            <span id=\"no_of_reviews\">({product.numOfReviews} đánh giá)</span>\r\n\r\n                            <hr />\r\n                            <p id=\"product_price\">{product.price}đ</p>\r\n                            <div className=\"stockCounter d-inline\">\r\n                                <span className=\"btn btn-danger minus\" onClick={decreaseQty}>-</span>\r\n\r\n                                <input type=\"number\" className=\"form-control count d-inline\" value={quantity} readOnly />\r\n                                <span className=\"btn btn-primary plus\" onClick={increaseQty}>+</span>\r\n                            </div>\r\n                            <button type=\"button\" id=\"cart_btn\" className=\"btn btn-primary d-inline ml-4\" disabled={product.stock === 0} onClick={addToCart}>Thêm vào giỏ hàng</button>\r\n                            <hr />\r\n                            <p>Tình trạng hàng: <span id=\"stock_status\" className={product.stock > 0 ? 'greenColor' : 'redColor'} >{product.stock > 0 ? 'Còn hàng' : 'Hết hàng'}</span></p>\r\n\r\n                            <hr />\r\n\r\n                            <h4 className=\"mt-2\">Mô tả:</h4>\r\n                            <p>{product.description}</p>\r\n                            <hr />\r\n                            <p id=\"product_seller mb-3\">Xuất xứ: <strong>{product.seller}</strong></p>\r\n\r\n                            {user ? <button id=\"review_btn\" type=\"button\" className=\"btn btn-primary mt-4\" data-toggle=\"modal\" data-target=\"#ratingModal\" onClick={setUserRatings}>\r\n                                Bình luận sản phẩm\r\n                            </button>\r\n                                :\r\n                                <div className=\"alert alert-danger mt-5\" type='alert'>Bạn cần đăng nhập để có thể đánh giá được sản phẩm này.</div>\r\n                            }\r\n\r\n\r\n                            <div className=\"row mt-2 mb-5\">\r\n                                <div className=\"rating w-50\">\r\n\r\n                                    <div className=\"modal fade\" id=\"ratingModal\" tabIndex=\"-1\" role=\"dialog\" aria-labelledby=\"ratingModalLabel\" aria-hidden=\"true\">\r\n                                        <div className=\"modal-dialog\" role=\"document\">\r\n                                            <div className=\"modal-content\">\r\n                                                <div className=\"modal-header\">\r\n                                                    <h5 className=\"modal-title\" id=\"ratingModalLabel\">Đánh giá sản phẩm</h5>\r\n                                                    <button type=\"button\" className=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                                                        <span aria-hidden=\"true\">&times;</span>\r\n                                                    </button>\r\n                                                </div>\r\n                                                <div className=\"modal-body\">\r\n\r\n                                                    <ul className=\"stars\" >\r\n                                                        <li className=\"star\"><i className=\"fa fa-star\"></i></li>\r\n                                                        <li className=\"star\"><i className=\"fa fa-star\"></i></li>\r\n                                                        <li className=\"star\"><i className=\"fa fa-star\"></i></li>\r\n                                                        <li className=\"star\"><i className=\"fa fa-star\"></i></li>\r\n                                                        <li className=\"star\"><i className=\"fa fa-star\"></i></li>\r\n                                                    </ul>\r\n\r\n                                                    <textarea\r\n                                                        name=\"review\"\r\n                                                        id=\"review\" className=\"form-control mt-3\"\r\n                                                        value={comment}\r\n                                                        onChange={(e) => setComment(e.target.value)}\r\n                                                    >\r\n\r\n                                                    </textarea>\r\n                                                    {/* <button className=\"btn my-3 float-right px-4 text-white\" onClick={reviewHandler} data-dismiss=\"modal\" aria-label=\"Close\">hi</button> */}\r\n                                                    <button className=\"btn my-3 float-right review-btn px-4 bg-primary\" onClick={reviewHandler} data-dismiss=\"modal\" aria-label=\"Close\">Gửi bình luận</button>\r\n                                                </div>\r\n                                            </div>\r\n                                        </div>\r\n                                    </div>\r\n\r\n                                </div>\r\n                            </div>\r\n\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n\r\n          <div className=\"container\">\r\n            {product.reviews && product.reviews.length > 0 && (\r\n              <ListReviews reviews={product.reviews} />\r\n            )}\r\n          </div>\r\n        </Fragment>\r\n      )}\r\n    </Fragment>\r\n  );\r\n};\r\n\r\nexport default ProductDetails;\r\n","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\Payment.js",["223","224","225","226","227","228","229","230","231"],"import React, { Fragment, useEffect, useState } from \"react\";\r\n\r\nimport MetaData from \"../layout/MetaData\";\r\nimport CheckoutSteps from \"./CheckoutSteps\";\r\n\r\nimport { useAlert } from \"react-alert\";\r\nimport { useDispatch, useSelector } from \"react-redux\";\r\nimport { createOrder, clearErrors } from \"../../actions/orderActions\";\r\n// import StyleCheckoutQR from \"./PaymentStyled\";\r\n\r\nimport {\r\n  useStripe,\r\n  useElements,\r\n  CardNumberElement,\r\n  CardExpiryElement,\r\n  CardCvcElement,\r\n} from \"@stripe/react-stripe-js\";\r\nimport moment from \"moment\";\r\n\r\nimport axios from \"axios\";\r\nimport { use } from \"express/lib/application\";\r\n\r\nconst options = {\r\n  style: {\r\n    base: {\r\n      fontSize: \"16px\",\r\n    },\r\n    invalid: {\r\n      color: \"#9e2146\",\r\n    },\r\n  },\r\n};\r\n\r\nconst Payment = ({ history }) => {\r\n  const alert = useAlert();\r\n  const [pricePaid, setPricePaid] = useState(null);\r\n  const [contentPaid, setContentPaid] = useState(null);\r\n  const [random, setRandom] = useState(null);\r\n  const stripe = useStripe();\r\n  const elements = useElements();\r\n  const dispatch = useDispatch();\r\n  const today = moment();\r\n  const { user } = useSelector((state) => state.auth);\r\n\r\n  const { cartItems, shippingInfo } = useSelector((state) => state.cart);\r\n  const { error } = useSelector((state) => state.newOrder);\r\n\r\n  useEffect(() => {\r\n    if (error) {\r\n      alert.error(error);\r\n      dispatch(clearErrors());\r\n    }\r\n  }, [dispatch, alert, error]);\r\n\r\n  // cart, ship info\r\n  const order = {\r\n    orderItems: cartItems,\r\n    shippingInfo,\r\n  };\r\n\r\n  const orderInfo = JSON.parse(sessionStorage.getItem(\"orderInfo\"));\r\n  if (orderInfo) {\r\n    order.itemsPrice = orderInfo.itemsPrice;\r\n    order.shippingPrice = orderInfo.shippingPrice;\r\n    // order.taxPrice = orderInfo.taxPrice;\r\n    order.totalPrice = orderInfo.totalPrice;\r\n  }\r\n\r\n  const paymentData = {\r\n    amount: Math.round(orderInfo.totalPrice * 100), // total price\r\n  };\r\n  useEffect(() => {\r\n    setRandom(Math.floor(1000 + Math.random() * 9000));\r\n  }, []);\r\n\r\n  const submitHandler = async (e) => {\r\n    e.preventDefault();\r\n\r\n    document.querySelector(\"#pay_btn\").disabled = true; // tìm kiếm các phần tử dựa trên id\r\n\r\n    let res;\r\n    try {\r\n      const config = {\r\n        // config header type\r\n        headers: {\r\n          \"Content-Type\": \"application/json\",\r\n        },\r\n      };\r\n\r\n      res = await axios.post(\"/api/v1/payment/process\", paymentData, config); // call api paymant process\r\n\r\n      const clientSecret = res.data.client_secret; // client_secret json client\r\n\r\n      console.log(clientSecret);\r\n\r\n      if (!stripe || !elements) {\r\n        // data input payment stripe\r\n        return;\r\n      }\r\n\r\n      const result = await stripe.confirmCardPayment(clientSecret, {\r\n        // Xác thực card info\r\n        payment_method: {\r\n          card: elements.getElement(CardNumberElement),\r\n          billing_details: {\r\n            // chi tiết thanh toán\r\n            name: user.name,\r\n            email: user.email,\r\n          },\r\n        },\r\n      });\r\n\r\n      if (result.error) {\r\n        alert.error(result.error.message); // return alert error\r\n        document.querySelector(\"#pay_btn\").disabled = false; // disabled btn\r\n      } else {\r\n        // Thanh toán có được xử lý hay không?\r\n        if (result.paymentIntent.status === \"succeeded\") {\r\n          // if success\r\n\r\n          order.paymentInfo = {\r\n            // payment with info cart, shipInfo\r\n            id: result.paymentIntent.id,\r\n            status: result.paymentIntent.status,\r\n          };\r\n\r\n          dispatch(createOrder(order)); // call createOrder action\r\n\r\n          history.push(\"/success\"); // return page success\r\n        } else {\r\n          alert.error(\"Có một số vấn đề trong khi xử lý thanh toán\");\r\n        }\r\n      }\r\n    } catch (error) {\r\n      // error server\r\n      document.querySelector(\"#pay_btn\").disabled = false;\r\n      alert.error(error.response.data.message);\r\n    }\r\n  };\r\n  const MY_BANK = {\r\n    BANK_ID: \"MB\",\r\n    ACCOUNT_NO: \"0358751727\",\r\n    ACCOUNT_NAME: \"NGUYEN THANH TRUNG\",\r\n  };\r\n\r\n  const QR = `https://img.vietqr.io/image/${MY_BANK.BANK_ID}-${MY_BANK.ACCOUNT_NO}-compact2.png?amount=${orderInfo.totalPrice}&addInfo=DTBV${user._id}${random}&accountName=${MY_BANK.ACCOUNT_NAME}`;\r\n  const checkPaid = () => {\r\n    axios\r\n      .get(\r\n        \"https://script.google.com/macros/s/AKfycbx0tSUnFN3O_PL6Rw2Yf2VseVOK2-8VYi5mUk56sVfmOoTplCPEm78dEIGHwP33srJd/exec\"\r\n      )\r\n      .then((res) => {\r\n        const paid = res.data.data[res.data.data.length - 1];\r\n        setPricePaid(paid[\"Giá trị\"]);\r\n        setContentPaid(paid[\"Mô tả\"]);\r\n      })\r\n      .catch((error) => {\r\n        console.error(\"API call error:\", error);\r\n      });\r\n  };\r\n  useEffect(() => {\r\n    // checkPaid();\r\n    let intervalId;\r\n    intervalId = setInterval(() => {\r\n      checkPaid();\r\n    }, 2000);\r\n    return () => {\r\n      clearInterval(intervalId);\r\n    };\r\n  }, []);\r\n\r\n  useEffect(() => {\r\n    if (\r\n      pricePaid === orderInfo.totalPrice &&\r\n      contentPaid?.replace(\"Thanh toan QR-\", \"\").split(\" \")[0] ===\r\n        `DTBV${user._id}${random}`\r\n    ) {\r\n      dispatch(createOrder(order));\r\n      // submitHandler();\r\n      history.push(\"/success\");\r\n      // clearInterval(intervalId);\r\n    }\r\n  }, [pricePaid, contentPaid]);\r\n  return (\r\n    <div>\r\n      <h3 className=\"title-checkqr\">Thanh toán</h3>\r\n      <div className=\"box\">\r\n        <p className=\"thanks\">Cảm ơn bạn. Đơn hàng của bạn đã được nhận.</p>\r\n        <ul className=\"woocommerce-order-overview woocommerce-thankyou-order-details order_details\">\r\n          <li className=\"woocommerce-order-overview__order order\">\r\n            Mã đơn hàng: <strong>DTBV{user._id}</strong>\r\n          </li>\r\n          <li className=\"woocommerce-order-overview__date date\">\r\n            Ngày: <strong>{today.format(\"DD-MM-yyyy\")}</strong>\r\n          </li>\r\n          <li className=\"woocommerce-order-overview__total total\">\r\n            Tổng cộng:{\" \"}\r\n            <strong>\r\n              <span className=\"woocommerce-Price-amount amount\">\r\n                <bdi>\r\n                  {orderInfo.totalPrice}&nbsp;\r\n                  <span className=\"woocommerce-Price-currencySymbol\">₫</span>\r\n                </bdi>\r\n              </span>\r\n            </strong>\r\n          </li>\r\n          <li className=\"woocommerce-order-overview__payment-method method\">\r\n            Phương thức thanh toán: <strong>Chuyển khoản</strong>\r\n          </li>\r\n        </ul>\r\n        <div className=\"box-qr\">\r\n          <div className=\"titleqr\">Mã QR chuyển khoản ngân hàng</div>\r\n          <div\r\n            style={{ display: \"flex\", justifyContent: \"center\", width: \"100%\" }}\r\n          >\r\n            <img style={{ width: \"300px\" }} src={QR} alt=\"\" />\r\n          </div>\r\n          <table\r\n            className=\"table table-bordered\"\r\n            style={{\r\n              fontSize: \"15px\",\r\n              maxWidth: \"800px\",\r\n              marginLeft: \"auto\",\r\n              marginRight: \"auto\",\r\n            }}\r\n          >\r\n            <tbody>\r\n              <tr className=\"\">\r\n                <td className=\"text-right \" style={{ textAlign: \"right\" }}>\r\n                  <strong style={{ color: \"black\" }}>Tên tài khoản:</strong>\r\n                </td>\r\n                <td\r\n                  className=\"text-left payment-instruction \"\r\n                  style={{ textAlign: \"left\" }}\r\n                >\r\n                  <div>\r\n                    <span style={{ color: \"black\" }}>\r\n                      {MY_BANK.ACCOUNT_NAME}\r\n                    </span>\r\n                  </div>\r\n                </td>\r\n              </tr>\r\n              <tr className=\"\" style={{ background: \"#FBFBFB\" }}>\r\n                <td className=\"text-right \" style={{ textAlign: \"right\" }}>\r\n                  <strong style={{ color: \"black\" }}>Số tài khoản:</strong>\r\n                </td>\r\n                <td\r\n                  className=\"text-left payment-instruction \"\r\n                  style={{ textAlign: \"left\" }}\r\n                >\r\n                  <span style={{ color: \"black\" }}>{MY_BANK.ACCOUNT_NO}</span>\r\n                </td>\r\n              </tr>\r\n              <tr>\r\n                <td className=\"text-right \" style={{ textAlign: \"right\" }}>\r\n                  <strong style={{ color: \"black\" }}>Ngân hàng:</strong>\r\n                </td>\r\n                <td\r\n                  className=\"text-left payment-instruction \"\r\n                  style={{ textAlign: \"left\" }}\r\n                >\r\n                  <div>\r\n                    <span style={{ color: \"black\" }}>{MY_BANK.BANK_ID}</span>\r\n                  </div>\r\n                </td>\r\n              </tr>\r\n              <tr>\r\n                <td className=\"text-right \" style={{ textAlign: \"right\" }}>\r\n                  <strong style={{ color: \"black\" }}>Số tiền:</strong>\r\n                </td>\r\n                <td\r\n                  className=\"text-left payment-instruction \"\r\n                  style={{ textAlign: \"left\" }}\r\n                >\r\n                  <div ng-switch-when=\"vcb\" className=\"ng-scope\">\r\n                    <span style={{ color: \"black\" }}>\r\n                      {orderInfo.totalPrice} <sup>vnđ</sup>\r\n                    </span>\r\n                  </div>\r\n                </td>\r\n              </tr>\r\n              <tr className=\"\">\r\n                <td className=\"text-right \" style={{ textAlign: \"right\" }}>\r\n                  <strong style={{ color: \"black\" }}>Nội dung*:</strong>\r\n                </td>\r\n                <td\r\n                  className=\"text-left payment-instruction \"\r\n                  style={{ textAlign: \"left\" }}\r\n                >\r\n                  <strong style={{ fontSize: \"20px\" }}>\r\n                    DTBV{user._id}\r\n                    {random}\r\n                  </strong>\r\n                </td>\r\n              </tr>\r\n            </tbody>\r\n          </table>\r\n          <div\r\n            style={{\r\n              display: \"flex\",\r\n              width: \"100%\",\r\n              justifyContent: \"center\",\r\n            }}\r\n          >\r\n            <button className=\"btn-pay\">Tôi đã thanh toán</button>\r\n          </div>\r\n        </div>\r\n        {/* <section className=\"woocommerce-order-details\">\r\n          <h2 className=\"woocommerce-order-details__title\">\r\n            Chi tiết đơn hàng\r\n          </h2>\r\n          <table className=\"woocommerce-table woocommerce-table--order-details shop_table order_details\">\r\n            <thead>\r\n              <tr>\r\n                <th className=\"woocommerce-table__product-name product-name\">\r\n                  Sản phẩm\r\n                </th>\r\n                <th className=\"woocommerce-table__product-table product-total\">\r\n                  Tổng\r\n                </th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              {listCart.map((item: any, index: any) => (\r\n                <tr className=\"woocommerce-table__line-item order_item\">\r\n                  <td className=\"woocommerce-table__product-name product-name\">\r\n                    <Link\r\n                      className=\"link\"\r\n                      to=\"https://store.masteranhduc.com/product/sach-truoc-binh-minh/\"\r\n                    >\r\n                      {item.title}\r\n                    </Link>{\" \"}\r\n                    <strong className=\"product-quantity\">\r\n                      ×&nbsp;{item.quantity}\r\n                    </strong>{\" \"}\r\n                  </td>\r\n                  <td className=\"woocommerce-table__product-total product-total\">\r\n                    <span className=\"woocommerce-Price-amount amount\">\r\n                      <bdi>\r\n                        {item.price * item.quantity}&nbsp;\r\n                        <span className=\"woocommerce-Price-currencySymbol\">\r\n                          ₫\r\n                        </span>\r\n                      </bdi>\r\n                    </span>{\" \"}\r\n                  </td>\r\n                </tr>\r\n              ))}\r\n            </tbody>\r\n            <tfoot>\r\n              <tr>\r\n                <th scope=\"row\">Phương thức thanh toán:</th>\r\n                <td>Chuyển khoản</td>\r\n              </tr>\r\n              <tr>\r\n                <th scope=\"row\">Tổng cộng:</th>\r\n                <td>\r\n                  <span className=\"woocommerce-Price-amount amount\">\r\n                    {totalPrice}&nbsp;\r\n                    <span className=\"woocommerce-Price-currencySymbol\">₫</span>\r\n                  </span>\r\n                </td>\r\n              </tr>\r\n            </tfoot>\r\n          </table>\r\n        </section> */}\r\n      </div>\r\n      <button className=\"btnDownloadQR\">\r\n        <div\r\n          style={{\r\n            width: \"100%\",\r\n            display: \"flex\",\r\n            alignItems: \"center\",\r\n            justifyContent: \"flex-start\",\r\n          }}\r\n        >\r\n          <svg\r\n            width=\"32\"\r\n            height=\"32\"\r\n            viewBox=\"0 0 32 32\"\r\n            fill=\"none\"\r\n            xmlns=\"http://www.w3.org/2000/svg\"\r\n          >\r\n            <path d=\"M3 3H11V1H1V11H3V3Z\" fill=\"white\"></path>\r\n            <path d=\"M11 11V5H5V11H11ZM7 7H9V9H7V7Z\" fill=\"white\"></path>\r\n            <path d=\"M20.5 3H29V11H31V1H20.5V3Z\" fill=\"white\"></path>\r\n            <path d=\"M27 11V5H21V11H27ZM23 7H25V9H23V7Z\" fill=\"white\"></path>\r\n            <path d=\"M11 29H3V21H1V31H11V29Z\" fill=\"white\"></path>\r\n            <path d=\"M11 21H5V27H11V21ZM9 25H7V23H9V25Z\" fill=\"white\"></path>\r\n            <path d=\"M29 29H20.5V31H31V21H29V29Z\" fill=\"white\"></path>\r\n            <path d=\"M17 19H25V23H27V17H17V19Z\" fill=\"white\"></path>\r\n            <path d=\"M27 27V25H15V17H5V19H13V27H27Z\" fill=\"white\"></path>\r\n            <path d=\"M13 5H15V11H13V5Z\" fill=\"white\"></path>\r\n            <path d=\"M5 15H19V5H17V13H5V15Z\" fill=\"white\"></path>\r\n            <path d=\"M21 13H27V15H21V13Z\" fill=\"white\"></path>\r\n            <path d=\"M21 21H23V23H21V21Z\" fill=\"white\"></path>\r\n            <path d=\"M17 21H19V23H17V21Z\" fill=\"white\"></path>\r\n          </svg>\r\n          <div style={{ marginLeft: \"16px\", textAlign: \"left\" }}>\r\n            <span\r\n              style={{\r\n                display: \"block\",\r\n                fontSize: \"16px\",\r\n                fontWeight: \"bold\",\r\n              }}\r\n            >\r\n              LƯU ẢNH QR\r\n            </span>\r\n            <span style={{ fontSize: \"12px\" }}>\r\n              <i> Sau đó mở App ngân hàng quét QR chuyển khoản</i>\r\n            </span>\r\n          </div>\r\n        </div>\r\n      </button>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default Payment;\r\n","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\order\\OrderDetails.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\Login.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\UpdateProfile.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\ConfirmOrder.js",["232","233"],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\Profile.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\LookAccount.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\order\\ListOrders.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\NewProduct.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\Dashboard.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ProductsList.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ProcessOrder.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ProductReviews.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\UpdateUser.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\UsersList.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\UpdateProduct.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\route\\ProtectedRoute.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\UpdatePassword.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\OrdersList.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\userActions.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\Register.js",["234","235"],"import React, { Fragment, useState, useEffect } from \"react\";\r\nimport { Link } from \"react-router-dom\";\r\nimport MetaData from \"../layout/MetaData\";\r\nimport Loader from \"../layout/Loader\";\r\n\r\nimport { useAlert } from \"react-alert\";\r\nimport { useDispatch, useSelector } from \"react-redux\";\r\nimport { register, clearErrors } from \"../../actions/userActions\";\r\n\r\nconst Register = ({ history }) => {\r\n  const [user, setUser] = useState({\r\n    name: \"\",\r\n    email: \"\",\r\n    password: \"\",\r\n  });\r\n\r\n  const { name, email, password } = user;\r\n\r\n  const [avatar, setAvatar] = useState(\"\");\r\n  const [avatarPreview, setAvatarPreview] = useState(\r\n    \"/images/default_avatar.jpg\"\r\n  );\r\n\r\n  const alert = useAlert();\r\n  const dispatch = useDispatch();\r\n\r\n  const { isAuthenticated, error, loading } = useSelector(\r\n    (state) => state.auth\r\n  );\r\n\r\n  useEffect(() => {\r\n    if (isAuthenticated) {\r\n      history.push(\"/\");\r\n    }\r\n\r\n    if (error) {\r\n      alert.error(error);\r\n      dispatch(clearErrors());\r\n    }\r\n  }, [dispatch, alert, isAuthenticated, error, history]);\r\n\r\n  const submitHandler = (e) => {\r\n    e.preventDefault();\r\n\r\n    const formData = new FormData();\r\n    formData.set(\"name\", name);\r\n    formData.set(\"email\", email);\r\n    formData.set(\"password\", password);\r\n\r\n    dispatch(register(formData));\r\n  };\r\n\r\n  const onChange = (e) => {\r\n    if (e.target.name === \"avatar\") {\r\n      const reader = new FileReader();\r\n\r\n      reader.onload = () => {\r\n        if (reader.readyState === 2) {\r\n          setAvatarPreview(reader.result);\r\n          setAvatar(reader.result);\r\n        }\r\n      };\r\n\r\n      reader.readAsDataURL(e.target.files[0]);\r\n    } else {\r\n      setUser({ ...user, [e.target.name]: e.target.value });\r\n    }\r\n  };\r\n\r\n  return (\r\n    <Fragment>\r\n      <MetaData title={\"Đăng ký\"} />\r\n\r\n      <div className=\"container mt-5\">\r\n        <div className=\"row justify-content-center\">\r\n          <div className=\"col-md-6 mt-5\">\r\n            <form\r\n              className=\"shadow-lg p-3 mb-5 bg-body-tertiary rounded\"\r\n              onSubmit={submitHandler}\r\n              encType=\"multipart/form-data\"\r\n            >\r\n              <h1 className=\"mb-4 text-center\">Đăng ký</h1>\r\n\r\n              <div className=\"mb-3\">\r\n                <label htmlFor=\"name_field\" className=\"form-label\">\r\n                  Tên\r\n                </label>\r\n                <input\r\n                  type=\"text\"\r\n                  id=\"name_field\"\r\n                  className=\"form-control\"\r\n                  name=\"name\"\r\n                  value={name}\r\n                  onChange={onChange}\r\n                />\r\n              </div>\r\n\r\n              <div className=\"mb-3\">\r\n                <label htmlFor=\"email_field\" className=\"form-label\">\r\n                  Email\r\n                </label>\r\n                <input\r\n                  type=\"email\"\r\n                  id=\"email_field\"\r\n                  className=\"form-control\"\r\n                  name=\"email\"\r\n                  value={email}\r\n                  onChange={onChange}\r\n                />\r\n              </div>\r\n\r\n              <div className=\"mb-3\">\r\n                <label htmlFor=\"password_field\" className=\"form-label\">\r\n                  Mật khẩu\r\n                </label>\r\n                <input\r\n                  type=\"password\"\r\n                  id=\"password_field\"\r\n                  className=\"form-control\"\r\n                  name=\"password\"\r\n                  value={password}\r\n                  onChange={onChange}\r\n                />\r\n              </div>\r\n\r\n              {loading ? (\r\n                <Loader />\r\n              ) : (\r\n                <button\r\n                  id=\"register_button\"\r\n                  type=\"submit\"\r\n                  className=\"btn btn-primary btn-block py-2\"\r\n                  disabled={loading ? true : false}\r\n                >\r\n                  ĐĂNG KÝ\r\n                </button>\r\n              )}\r\n\r\n              <div className=\"text-center mt-3\">\r\n                <Link to=\"/login\" className=\"text-decoration-none\">\r\n                  Đã có tài khoản? Đăng nhập ngay\r\n                </Link>\r\n              </div>\r\n            </form>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </Fragment>\r\n  );\r\n};\r\n\r\nexport default Register;\r\n","D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\MetaData.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\product\\Product.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\cartActions.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\productActions.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Loader.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Slider.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Search.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\CheckoutSteps.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\orderActions.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\Sidebar.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ChartIncome.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\userConstants.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\productConstants.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\orderConstants.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\cartConstants.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\review\\ListReviews.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\paymentActions.js",[],"D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\Chart.js",[],{"ruleId":"236","replacedBy":"237"},{"ruleId":"238","replacedBy":"239"},{"ruleId":"240","severity":1,"message":"241","line":2,"column":10,"nodeType":"242","messageId":"243","endLine":2,"endColumn":14},{"ruleId":"240","severity":1,"message":"244","line":20,"column":9,"nodeType":"242","messageId":"243","endLine":20,"endColumn":13},{"ruleId":"240","severity":1,"message":"245","line":1,"column":17,"nodeType":"242","messageId":"243","endLine":1,"endColumn":25},{"ruleId":"240","severity":1,"message":"246","line":3,"column":8,"nodeType":"242","messageId":"243","endLine":3,"endColumn":16},{"ruleId":"240","severity":1,"message":"247","line":4,"column":8,"nodeType":"242","messageId":"243","endLine":4,"endColumn":21},{"ruleId":"240","severity":1,"message":"248","line":15,"column":3,"nodeType":"242","messageId":"243","endLine":15,"endColumn":20},{"ruleId":"240","severity":1,"message":"249","line":16,"column":3,"nodeType":"242","messageId":"243","endLine":16,"endColumn":17},{"ruleId":"240","severity":1,"message":"250","line":21,"column":10,"nodeType":"242","messageId":"243","endLine":21,"endColumn":13},{"ruleId":"240","severity":1,"message":"251","line":23,"column":7,"nodeType":"242","messageId":"243","endLine":23,"endColumn":14},{"ruleId":"240","severity":1,"message":"252","line":76,"column":9,"nodeType":"242","messageId":"243","endLine":76,"endColumn":22},{"ruleId":"253","severity":1,"message":"254","line":183,"column":6,"nodeType":"255","endLine":183,"endColumn":30,"suggestions":"256"},{"ruleId":"240","severity":1,"message":"257","line":6,"column":23,"nodeType":"242","messageId":"243","endLine":6,"endColumn":34},{"ruleId":"240","severity":1,"message":"258","line":18,"column":9,"nodeType":"242","messageId":"243","endLine":18,"endColumn":14},{"ruleId":"240","severity":1,"message":"259","line":19,"column":10,"nodeType":"242","messageId":"243","endLine":19,"endColumn":16},{"ruleId":"240","severity":1,"message":"260","line":20,"column":10,"nodeType":"242","messageId":"243","endLine":20,"endColumn":23},"no-native-reassign",["261"],"no-negated-in-lhs",["262"],"no-unused-vars","'Link' is defined but never used.","Identifier","unusedVar","'next' is assigned a value but never used.","'Fragment' is defined but never used.","'MetaData' is defined but never used.","'CheckoutSteps' is defined but never used.","'CardExpiryElement' is defined but never used.","'CardCvcElement' is defined but never used.","'use' is defined but never used.","'options' is assigned a value but never used.","'submitHandler' is assigned a value but never used.","react-hooks/exhaustive-deps","React Hook useEffect has missing dependencies: 'dispatch', 'history', 'order', 'orderInfo.totalPrice', 'random', and 'user._id'. Either include them or remove the dependency array.","ArrayExpression",["263"],"'clearErrors' is defined but never used.","'order' is assigned a value but never used.","'avatar' is assigned a value but never used.","'avatarPreview' is assigned a value but never used.","no-global-assign","no-unsafe-negation",{"desc":"264","fix":"265"},"Update the dependencies array to be: [pricePaid, contentPaid, orderInfo.totalPrice, user._id, random, dispatch, order, history]",{"range":"266","text":"267"},[5280,5304],"[pricePaid, contentPaid, orderInfo.totalPrice, user._id, random, dispatch, order, history]"]
+[
+  {
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\index.js": "1",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\store.js": "2",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\App.js": "3",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\productReducers.js": "4",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\cartReducers.js": "5",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\userReducers.js": "6",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\orderReducers.js": "7",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\Cart.js": "8",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\Home.js": "9",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Footer.js": "10",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Header.js": "11",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\OrderSuccess.js": "12",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\Shipping.js": "13",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\product\\ProductDetails.js": "14",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\Payment.js": "15",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\order\\OrderDetails.js": "16",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\Login.js": "17",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\UpdateProfile.js": "18",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\ConfirmOrder.js": "19",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\Profile.js": "20",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\LookAccount.js": "21",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\order\\ListOrders.js": "22",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\NewProduct.js": "23",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\Dashboard.js": "24",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ProductsList.js": "25",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ProcessOrder.js": "26",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ProductReviews.js": "27",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\UpdateUser.js": "28",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\UsersList.js": "29",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\UpdateProduct.js": "30",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\route\\ProtectedRoute.js": "31",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\UpdatePassword.js": "32",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\OrdersList.js": "33",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\userActions.js": "34",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\Register.js": "35",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\MetaData.js": "36",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\product\\Product.js": "37",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\cartActions.js": "38",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\productActions.js": "39",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Loader.js": "40",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Slider.js": "41",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Search.js": "42",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\CheckoutSteps.js": "43",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\orderActions.js": "44",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\Sidebar.js": "45",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ChartIncome.js": "46",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\userConstants.js": "47",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\productConstants.js": "48",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\orderConstants.js": "49",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\cartConstants.js": "50",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\review\\ListReviews.js": "51",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\paymentActions.js": "52",
+    "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\Chart.js": "53"
+  },
+  {
+    "size": 713,
+    "mtime": 1717780405804,
+    "results": "54",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 1779,
+    "mtime": 1717780405805,
+    "results": "56",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 5254,
+    "mtime": 1717780405797,
+    "results": "57",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 7273,
+    "mtime": 1717780405805,
+    "results": "58",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 1144,
+    "mtime": 1717780405804,
+    "results": "59",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 6175,
+    "mtime": 1717780405805,
+    "results": "60",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 4134,
+    "mtime": 1717780405804,
+    "results": "61",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 6240,
+    "mtime": 1717780405800,
+    "results": "62",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 9756,
+    "mtime": 1717780405798,
+    "results": "63",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 3880,
+    "mtime": 1717780405801,
+    "results": "64",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 3714,
+    "mtime": 1717867292119,
+    "results": "65",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 1403,
+    "mtime": 1717867292118,
+    "results": "66",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 4695,
+    "mtime": 1717780405801,
+    "results": "67",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 13957,
+    "mtime": 1717780405802,
+    "results": "68",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 14681,
+    "mtime": 1717780627552,
+    "results": "69",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 4005,
+    "mtime": 1717780405802,
+    "results": "70",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 3861,
+    "mtime": 1717780405803,
+    "results": "71",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 5309,
+    "mtime": 1717780405803,
+    "results": "72",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 5771,
+    "mtime": 1717869239691,
+    "results": "73",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 3948,
+    "mtime": 1717780405803,
+    "results": "74",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 4427,
+    "mtime": 1717780405799,
+    "results": "75",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 2880,
+    "mtime": 1717780405802,
+    "results": "76",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 8663,
+    "mtime": 1717780405799,
+    "results": "77",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 13773,
+    "mtime": 1717780405799,
+    "results": "78",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 5709,
+    "mtime": 1717780405800,
+    "results": "79",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 6655,
+    "mtime": 1717780405800,
+    "results": "80",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 5285,
+    "mtime": 1717780405800,
+    "results": "81",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 4863,
+    "mtime": 1717780405800,
+    "results": "82",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 4568,
+    "mtime": 1717780405800,
+    "results": "83",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 9756,
+    "mtime": 1717780405800,
+    "results": "84",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 951,
+    "mtime": 1717780405803,
+    "results": "85",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 3036,
+    "mtime": 1717780405803,
+    "results": "86",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 3958,
+    "mtime": 1717780405799,
+    "results": "87",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 7204,
+    "mtime": 1717780405798,
+    "results": "88",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 4293,
+    "mtime": 1717780405803,
+    "results": "89",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 219,
+    "mtime": 1717780405801,
+    "results": "90",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 1665,
+    "mtime": 1717780405802,
+    "results": "91",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 1091,
+    "mtime": 1717780405797,
+    "results": "92",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 6164,
+    "mtime": 1717780405798,
+    "results": "93",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 209,
+    "mtime": 1717780405801,
+    "results": "94",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 2265,
+    "mtime": 1717780405801,
+    "results": "95",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 1066,
+    "mtime": 1717780405801,
+    "results": "96",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 1870,
+    "mtime": 1717780405801,
+    "results": "97",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 3274,
+    "mtime": 1717780405798,
+    "results": "98",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 1214,
+    "mtime": 1717780405800,
+    "results": "99",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 1334,
+    "mtime": 1717780405798,
+    "results": "100",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 2264,
+    "mtime": 1717780405804,
+    "results": "101",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 1946,
+    "mtime": 1717780405804,
+    "results": "102",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 1186,
+    "mtime": 1717780405804,
+    "results": "103",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 148,
+    "mtime": 1717780405804,
+    "results": "104",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 1264,
+    "mtime": 1717780405802,
+    "results": "105",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 2040,
+    "mtime": 1717869263530,
+    "results": "106",
+    "hashOfConfig": "55"
+  },
+  {
+    "size": 783,
+    "mtime": 1717780405798,
+    "results": "107",
+    "hashOfConfig": "55"
+  },
+  {
+    "filePath": "108",
+    "messages": "109",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  "11ep8o9",
+  {
+    "filePath": "111",
+    "messages": "112",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "113",
+    "messages": "114",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "115",
+    "messages": "116",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "117",
+    "messages": "118",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "119",
+    "messages": "120",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "121",
+    "messages": "122",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "123",
+    "messages": "124",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "125",
+    "messages": "126",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "127",
+    "messages": "128",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "129",
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "130",
+    "messages": "131",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "132",
+    "messages": "133",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "134",
+    "messages": "135",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "136",
+    "messages": "137",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "138",
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "139",
+    "messages": "140",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 9,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "141",
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "142",
+    "messages": "143",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "144",
+    "messages": "145",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "146",
+    "messages": "147",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "148",
+    "messages": "149",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 2,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "150",
+    "messages": "151",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "152",
+    "messages": "153",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "154",
+    "messages": "155",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "156",
+    "messages": "157",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "158",
+    "messages": "159",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "160",
+    "messages": "161",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "162",
+    "messages": "163",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "164",
+    "messages": "165",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "166",
+    "messages": "167",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "168",
+    "messages": "169",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "170",
+    "messages": "171",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "172",
+    "messages": "173",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "174",
+    "messages": "175",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "176",
+    "messages": "177",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "178",
+    "messages": "179",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "180",
+    "messages": "181",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 2,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "182",
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "183",
+    "messages": "184",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "185",
+    "messages": "186",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "187",
+    "messages": "188",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "189",
+    "messages": "190",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "191",
+    "messages": "192",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "193",
+    "messages": "194",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "195",
+    "messages": "196",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "197",
+    "messages": "198",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "199",
+    "messages": "200",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "201",
+    "messages": "202",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "203",
+    "messages": "204",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "205",
+    "messages": "206",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "207",
+    "messages": "208",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "209",
+    "messages": "210",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "211",
+    "messages": "212",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "213",
+    "messages": "214",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  {
+    "filePath": "215",
+    "messages": "216",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "217",
+    "messages": "218",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "110"
+  },
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\index.js",
+  [],
+  [
+    "219",
+    "220"
+  ],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\store.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\App.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\productReducers.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\cartReducers.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\userReducers.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\reducers\\orderReducers.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\Cart.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\Home.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Footer.js",
+  [
+    "221"
+  ],
+  "import React, { Fragment } from 'react'\r\nimport { Link } from 'react-router-dom'\r\n\r\nconst Footer = () => {\r\n  return (\r\n    <Fragment>\r\n      <footer className=\"footer\">\r\n        {/* Footer Top */}\r\n        <br/>\r\n        <div className=\"footer-top section\">\r\n          <div className=\"container\">\r\n            <div className=\"row\">\r\n              <div className=\"col-lg-5 col-md-6 col-12\">\r\n                {/* Single Widget */}\r\n                <div className=\"single-footer about\">\r\n                  <div className=\"logo\">\r\n                    <a href=\"index.html\"><img src=\"/images/logo.png\" alt=\"#\" /></a>\r\n                  </div>\r\n                  <p className=\"text\">Chào mừng bạn đến với Thủ Lĩnh Store - Trải nghiệm mua sắm trực tuyến hoàn hảo! Chúng tôi tự hào cung cấp dịch vụ hỗ trợ 24/7, đồng thời mang đến những ưu đãi hấp dẫn và không ngừng cập nhật sản phẩm mới. Hãy khám phá thế giới mua sắm đa dạng và độc đáo tại trang web của chúng tôi ngay hôm nay.</p>\r\n                  <p className=\"text\">Cần hỗ trợ liên hệ với chúng tôi: <span><a href=\"tel:0358751727\">+84358751727</a></span></p>\r\n                </div>\r\n                {/* End Single Widget */}\r\n              </div>\r\n              <div className=\"col-lg-2 col-md-6 col-12\">\r\n                {/* Single Widget */}\r\n                <div className=\"single-footer links\">\r\n                  <h4>Thông tin</h4>\r\n                  <ul>\r\n                    <li>Về chúng tôi</li>\r\n                    <li>Điều khoản và điều kiện</li>\r\n                    <li>Liên hệ với chúng tôi</li>\r\n                    <li>Giúp đỡ</li>\r\n                  </ul>\r\n                </div>\r\n                {/* End Single Widget */}\r\n              </div>\r\n              <div className=\"col-lg-2 col-md-6 col-12\">\r\n                {/* Single Widget */}\r\n                <div className=\"single-footer links\">\r\n                  <h4>Dịch vụ khách hàng</h4>\r\n                  <ul>\r\n                    <li>Phương thức thanh toán</li>\r\n                    <li>Hoàn tiền</li>\r\n                    <li>Giao hàng</li>\r\n                    <li>Điều khoản và bảo mật</li>\r\n                  </ul>\r\n                </div>\r\n                {/* End Single Widget */}\r\n              </div>\r\n              <div className=\"col-lg-3 col-md-6 col-12\">\r\n                {/* Single Widget */}\r\n                <div className=\"single-footer social\">\r\n                  <h4>Thông tin</h4>\r\n                  {/* Single Widget */}\r\n                  <div className=\"contact\">\r\n                    <ul>\r\n                      <li>Số 263 Dã Tượng, Nha Trang, Khánh Hòa</li>\r\n                      <li>Nhóm 5</li>\r\n                      <li>info@tltore.com</li>\r\n                      <li>+84358751727</li>\r\n                    </ul>\r\n                  </div>\r\n                  {/* End Single Widget */}\r\n                  <ul>\r\n                  </ul>\r\n                </div>\r\n                {/* End Single Widget */}\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        {/* End Footer Top */}\r\n        <div className=\"copyright\">\r\n          <div className=\"container\">\r\n            <div className=\"inner\">\r\n              <div className=\"row\">\r\n                <div className=\"col-lg-12 col-12\">\r\n                  <div className=\"text-center\">\r\n                    <p>Copyright © 2023 By Nhóm 5</p>\r\n                  </div>\r\n                </div>\r\n                <div className=\"col-lg-6 col-12\">\r\n                  <div className=\"right\">\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </footer>\r\n    </Fragment>\r\n  )\r\n}\r\n\r\nexport default Footer\r\n",
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Header.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\OrderSuccess.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\Shipping.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\product\\ProductDetails.js",
+  [
+    "222"
+  ],
+  "import React, { Fragment, useState, useEffect } from \"react\";\r\nimport { Carousel } from \"react-bootstrap\";\r\n\r\nimport Loader from \"../layout/Loader\";\r\nimport MetaData from \"../layout/MetaData\";\r\nimport ListReviews from \"../review/ListReviews\";\r\n\r\nimport { useAlert } from \"react-alert\";\r\nimport { useDispatch, useSelector } from \"react-redux\";\r\nimport {\r\n  getProductDetails,\r\n  newReview,\r\n  clearErrors,\r\n} from \"../../actions/productActions\";\r\nimport { addItemToCart } from \"../../actions/cartActions\";\r\nimport { NEW_REVIEW_RESET } from \"../../constants/productConstants\";\r\nimport { useHistory } from \"react-router-dom/cjs/react-router-dom\";\r\n\r\nconst ProductDetails = ({ match }) => {\r\n  const next = useHistory();\r\n  const [quantity, setQuantity] = useState(1);\r\n  const [rating, setRating] = useState(0);\r\n  const [comment, setComment] = useState(\"\");\r\n\r\n  const dispatch = useDispatch();\r\n  const alert = useAlert();\r\n\r\n  const { loading, error, product } = useSelector(\r\n    (state) => state.productDetails\r\n  );\r\n  const { user } = useSelector((state) => state.auth);\r\n  const { error: reviewError, success } = useSelector(\r\n    (state) => state.newReview\r\n  );\r\n\r\n  useEffect(() => {\r\n    dispatch(getProductDetails(match.params.id));\r\n\r\n    if (error) {\r\n      alert.error(error);\r\n      dispatch(clearErrors());\r\n    }\r\n\r\n    if (reviewError) {\r\n      alert.error(reviewError);\r\n      dispatch(clearErrors());\r\n    }\r\n\r\n    if (success) {\r\n      alert.success(\"Đánh giá thành công\");\r\n      dispatch({ type: NEW_REVIEW_RESET });\r\n    }\r\n  }, [dispatch, alert, error, reviewError, match.params.id, success]);\r\n\r\n  const addToCart = () => {\r\n    if (user) {\r\n      dispatch(addItemToCart(match.params.id, quantity));\r\n      alert.success(\"Đã thêm vào giỏ hàng\");\r\n    } else {\r\n      alert.error(\"Bạn cần đăng nhập để thêm vào giỏ hàng!\");\r\n    }\r\n  };\r\n\r\n  const increaseQty = () => {\r\n    const count = document.querySelector(\".count\");\r\n\r\n    if (count.valueAsNumber >= product.stock) return;\r\n\r\n    const qty = count.valueAsNumber + 1;\r\n    setQuantity(qty);\r\n  };\r\n\r\n  const decreaseQty = () => {\r\n    const count = document.querySelector(\".count\");\r\n\r\n    if (count.valueAsNumber <= 1) return;\r\n\r\n    const qty = count.valueAsNumber - 1;\r\n    setQuantity(qty);\r\n  };\r\n\r\n  function setUserRatings() {\r\n    const stars = document.querySelectorAll(\".star\");\r\n\r\n    stars.forEach((star, index) => {\r\n      star.starValue = index + 1;\r\n\r\n      [\"click\", \"mouseover\", \"mouseout\"].forEach(function (e) {\r\n        star.addEventListener(e, showRatings);\r\n      });\r\n    });\r\n\r\n    function showRatings(e) {\r\n      stars.forEach((star, index) => {\r\n        if (e.type === \"click\") {\r\n          if (index < this.starValue) {\r\n            star.classList.add(\"orange\");\r\n\r\n            setRating(this.starValue);\r\n          } else {\r\n            star.classList.remove(\"orange\");\r\n          }\r\n        }\r\n\r\n        if (e.type === \"mouseover\") {\r\n          if (index < this.starValue) {\r\n            star.classList.add(\"yellow\");\r\n          } else {\r\n            star.classList.remove(\"yellow\");\r\n          }\r\n        }\r\n\r\n        if (e.type === \"mouseout\") {\r\n          star.classList.remove(\"yellow\");\r\n        }\r\n      });\r\n    }\r\n  }\r\n\r\n  const reviewHandler = () => {\r\n    const formData = new FormData();\r\n\r\n    formData.set(\"rating\", rating);\r\n    formData.set(\"comment\", comment);\r\n    formData.set(\"productId\", match.params.id);\r\n\r\n    dispatch(newReview(formData));\r\n  };\r\n  return (\r\n    <Fragment>\r\n      {loading ? (\r\n        <Loader />\r\n      ) : (\r\n        <Fragment>\r\n          <MetaData title={product.name} />\r\n          <div className=\"row d-flex justify-content-around\">\r\n            <div className=\"col-12 col-lg-5 img-fluid\" id=\"product_image\">\r\n              <Carousel pause=\"hover\">\r\n                {product.images &&\r\n                  product.images.map((image) => (\r\n                    <Carousel.Item key={image.public_id}>\r\n                      <img\r\n                        className=\"d-block w-100\"\r\n                        src={image.url}\r\n                        alt={product.title}\r\n                      />\r\n                    </Carousel.Item>\r\n                  ))}\r\n              </Carousel>\r\n            </div>\r\n\r\n            <div className=\"col-12 col-lg-5 mt-5\">\r\n              <h3>{product.name}</h3>\r\n              <hr />\r\n\r\n              <div className=\"rating-outer\">\r\n                <span id=\"no_of_reviews\">{product.ratings}</span>\r\n                <div\r\n                  className=\"rating-inner\"\r\n                  style={{ width: `${(product.ratings / 5) * 100}%` }}\r\n                ></div>\r\n              </div>\r\n              <span id=\"no_of_reviews\">({product.numOfReviews} đánh giá)</span>\r\n\r\n              <hr />\r\n              <p id=\"product_price\">{product.price}đ</p>\r\n              <div className=\"stockCounter d-inline\">\r\n                <span className=\"btn btn-danger minus\" onClick={decreaseQty}>\r\n                  -\r\n                </span>\r\n\r\n                <input\r\n                  type=\"number\"\r\n                  className=\"form-control count d-inline\"\r\n                  value={quantity}\r\n                  readOnly\r\n                />\r\n                <span className=\"btn btn-primary plus\" onClick={increaseQty}>\r\n                  +\r\n                </span>\r\n              </div>\r\n              <button\r\n                type=\"button\"\r\n                id=\"cart_btn\"\r\n                className=\"btn btn-primary d-inline ml-4\"\r\n                disabled={product.stock === 0}\r\n                onClick={addToCart}\r\n              >\r\n                Thêm vào giỏ hàng\r\n              </button>\r\n\r\n              <hr />\r\n              <p>\r\n                Tình trạng hàng:{\" \"}\r\n                <span\r\n                  id=\"stock_status\"\r\n                  className={product.stock > 0 ? \"greenColor\" : \"redColor\"}\r\n                >\r\n                  {product.stock > 0 ? product.stock : \"Hết hàng\"}\r\n                </span>\r\n              </p>\r\n\r\n              <hr />\r\n\r\n              <h4 className=\"mt-2\">Mô tả:</h4>\r\n              <p>{product.description}</p>\r\n              <hr />\r\n              <p id=\"product_seller mb-3\">\r\n                Xuất xứ: <strong>{product.seller}</strong>\r\n              </p>\r\n\r\n              {user ? (\r\n                <button\r\n                  id=\"review_btn\"\r\n                  type=\"button\"\r\n                  className=\"btn btn-primary mt-4\"\r\n                  data-toggle=\"modal\"\r\n                  data-target=\"#ratingModal\"\r\n                  onClick={setUserRatings}\r\n                >\r\n                  Bình luận sản phẩm\r\n                </button>\r\n              ) : (\r\n                <div className=\"alert alert-danger mt-5\" type=\"alert\">\r\n                  Bạn cần đăng nhập để có thể đánh giá được sản phẩm này.\r\n                </div>\r\n              )}\r\n\r\n              <div className=\"row mt-2 mb-5\">\r\n                <div className=\"rating w-50\">\r\n                  <div\r\n                    className=\"modal fade\"\r\n                    id=\"ratingModal\"\r\n                    tabIndex=\"-1\"\r\n                    role=\"dialog\"\r\n                    aria-labelledby=\"ratingModalLabel\"\r\n                    aria-hidden=\"true\"\r\n                  >\r\n                    <div className=\"modal-dialog\" role=\"document\">\r\n                      <div className=\"modal-content\">\r\n                        <div className=\"modal-header\">\r\n                          <h5 className=\"modal-title\" id=\"ratingModalLabel\">\r\n                            Đánh giá sản phẩm\r\n                          </h5>\r\n                          <button\r\n                            type=\"button\"\r\n                            className=\"close\"\r\n                            data-dismiss=\"modal\"\r\n                            aria-label=\"Close\"\r\n                          >\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                          </button>\r\n                        </div>\r\n\r\n\r\n                        <div className=\"col-12 col-lg-5 mt-5\">\r\n                            <h3>{product.name}</h3>\r\n                            <hr />\r\n\r\n                            <div className=\"rating-outer\">\r\n                                <span id=\"no_of_reviews\">{product.ratings}</span>\r\n                                <div className=\"rating-inner\" style={{ width: `${(product.ratings / 5) * 100}%` }}></div>\r\n                            </div>\r\n                            <span id=\"no_of_reviews\">({product.numOfReviews} đánh giá)</span>\r\n\r\n                            <hr />\r\n                            <p id=\"product_price\">{product.price}đ</p>\r\n                            <div className=\"stockCounter d-inline\">\r\n                                <span className=\"btn btn-danger minus\" onClick={decreaseQty}>-</span>\r\n\r\n                                <input type=\"number\" className=\"form-control count d-inline\" value={quantity} readOnly />\r\n                                <span className=\"btn btn-primary plus\" onClick={increaseQty}>+</span>\r\n                            </div>\r\n                            <button type=\"button\" id=\"cart_btn\" className=\"btn btn-primary d-inline ml-4\" disabled={product.stock === 0} onClick={addToCart}>Thêm vào giỏ hàng</button>\r\n                            <hr />\r\n                            <p>Tình trạng hàng: <span id=\"stock_status\" className={product.stock > 0 ? 'greenColor' : 'redColor'} >{product.stock > 0 ? 'Còn hàng' : 'Hết hàng'}</span></p>\r\n\r\n                            <hr />\r\n\r\n                            <h4 className=\"mt-2\">Mô tả:</h4>\r\n                            <p>{product.description}</p>\r\n                            <hr />\r\n                            <p id=\"product_seller mb-3\">Xuất xứ: <strong>{product.seller}</strong></p>\r\n\r\n                            {user ? <button id=\"review_btn\" type=\"button\" className=\"btn btn-primary mt-4\" data-toggle=\"modal\" data-target=\"#ratingModal\" onClick={setUserRatings}>\r\n                                Bình luận sản phẩm\r\n                            </button>\r\n                                :\r\n                                <div className=\"alert alert-danger mt-5\" type='alert'>Bạn cần đăng nhập để có thể đánh giá được sản phẩm này.</div>\r\n                            }\r\n\r\n\r\n                            <div className=\"row mt-2 mb-5\">\r\n                                <div className=\"rating w-50\">\r\n\r\n                                    <div className=\"modal fade\" id=\"ratingModal\" tabIndex=\"-1\" role=\"dialog\" aria-labelledby=\"ratingModalLabel\" aria-hidden=\"true\">\r\n                                        <div className=\"modal-dialog\" role=\"document\">\r\n                                            <div className=\"modal-content\">\r\n                                                <div className=\"modal-header\">\r\n                                                    <h5 className=\"modal-title\" id=\"ratingModalLabel\">Đánh giá sản phẩm</h5>\r\n                                                    <button type=\"button\" className=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                                                        <span aria-hidden=\"true\">&times;</span>\r\n                                                    </button>\r\n                                                </div>\r\n                                                <div className=\"modal-body\">\r\n\r\n                                                    <ul className=\"stars\" >\r\n                                                        <li className=\"star\"><i className=\"fa fa-star\"></i></li>\r\n                                                        <li className=\"star\"><i className=\"fa fa-star\"></i></li>\r\n                                                        <li className=\"star\"><i className=\"fa fa-star\"></i></li>\r\n                                                        <li className=\"star\"><i className=\"fa fa-star\"></i></li>\r\n                                                        <li className=\"star\"><i className=\"fa fa-star\"></i></li>\r\n                                                    </ul>\r\n\r\n                                                    <textarea\r\n                                                        name=\"review\"\r\n                                                        id=\"review\" className=\"form-control mt-3\"\r\n                                                        value={comment}\r\n                                                        onChange={(e) => setComment(e.target.value)}\r\n                                                    >\r\n\r\n                                                    </textarea>\r\n                                                    {/* <button className=\"btn my-3 float-right px-4 text-white\" onClick={reviewHandler} data-dismiss=\"modal\" aria-label=\"Close\">hi</button> */}\r\n                                                    <button className=\"btn my-3 float-right review-btn px-4 bg-primary\" onClick={reviewHandler} data-dismiss=\"modal\" aria-label=\"Close\">Gửi bình luận</button>\r\n                                                </div>\r\n                                            </div>\r\n                                        </div>\r\n                                    </div>\r\n\r\n                                </div>\r\n                            </div>\r\n\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n\r\n          <div className=\"container\">\r\n            {product.reviews && product.reviews.length > 0 && (\r\n              <ListReviews reviews={product.reviews} />\r\n            )}\r\n          </div>\r\n        </Fragment>\r\n      )}\r\n    </Fragment>\r\n  );\r\n};\r\n\r\nexport default ProductDetails;\r\n",
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\Payment.js",
+  [
+    "223",
+    "224",
+    "225",
+    "226",
+    "227",
+    "228",
+    "229",
+    "230",
+    "231"
+  ],
+  "import React, { Fragment, useEffect, useState } from \"react\";\r\n\r\nimport MetaData from \"../layout/MetaData\";\r\nimport CheckoutSteps from \"./CheckoutSteps\";\r\n\r\nimport { useAlert } from \"react-alert\";\r\nimport { useDispatch, useSelector } from \"react-redux\";\r\nimport { createOrder, clearErrors } from \"../../actions/orderActions\";\r\n// import StyleCheckoutQR from \"./PaymentStyled\";\r\n\r\nimport {\r\n  useStripe,\r\n  useElements,\r\n  CardNumberElement,\r\n  CardExpiryElement,\r\n  CardCvcElement,\r\n} from \"@stripe/react-stripe-js\";\r\nimport moment from \"moment\";\r\n\r\nimport axios from \"axios\";\r\nimport { use } from \"express/lib/application\";\r\n\r\nconst options = {\r\n  style: {\r\n    base: {\r\n      fontSize: \"16px\",\r\n    },\r\n    invalid: {\r\n      color: \"#9e2146\",\r\n    },\r\n  },\r\n};\r\n\r\nconst Payment = ({ history }) => {\r\n  const alert = useAlert();\r\n  const [pricePaid, setPricePaid] = useState(null);\r\n  const [contentPaid, setContentPaid] = useState(null);\r\n  const [random, setRandom] = useState(null);\r\n  const stripe = useStripe();\r\n  const elements = useElements();\r\n  const dispatch = useDispatch();\r\n  const today = moment();\r\n  const { user } = useSelector((state) => state.auth);\r\n\r\n  const { cartItems, shippingInfo } = useSelector((state) => state.cart);\r\n  const { error } = useSelector((state) => state.newOrder);\r\n\r\n  useEffect(() => {\r\n    if (error) {\r\n      alert.error(error);\r\n      dispatch(clearErrors());\r\n    }\r\n  }, [dispatch, alert, error]);\r\n\r\n  // cart, ship info\r\n  const order = {\r\n    orderItems: cartItems,\r\n    shippingInfo,\r\n  };\r\n\r\n  const orderInfo = JSON.parse(sessionStorage.getItem(\"orderInfo\"));\r\n  if (orderInfo) {\r\n    order.itemsPrice = orderInfo.itemsPrice;\r\n    order.shippingPrice = orderInfo.shippingPrice;\r\n    // order.taxPrice = orderInfo.taxPrice;\r\n    order.totalPrice = orderInfo.totalPrice;\r\n  }\r\n\r\n  const paymentData = {\r\n    amount: Math.round(orderInfo.totalPrice * 100), // total price\r\n  };\r\n  useEffect(() => {\r\n    setRandom(Math.floor(1000 + Math.random() * 9000));\r\n  }, []);\r\n\r\n  const submitHandler = async (e) => {\r\n    e.preventDefault();\r\n\r\n    document.querySelector(\"#pay_btn\").disabled = true; // tìm kiếm các phần tử dựa trên id\r\n\r\n    let res;\r\n    try {\r\n      const config = {\r\n        // config header type\r\n        headers: {\r\n          \"Content-Type\": \"application/json\",\r\n        },\r\n      };\r\n\r\n      res = await axios.post(\"/api/v1/payment/process\", paymentData, config); // call api paymant process\r\n\r\n      const clientSecret = res.data.client_secret; // client_secret json client\r\n\r\n      console.log(clientSecret);\r\n\r\n      if (!stripe || !elements) {\r\n        // data input payment stripe\r\n        return;\r\n      }\r\n\r\n      const result = await stripe.confirmCardPayment(clientSecret, {\r\n        // Xác thực card info\r\n        payment_method: {\r\n          card: elements.getElement(CardNumberElement),\r\n          billing_details: {\r\n            // chi tiết thanh toán\r\n            name: user.name,\r\n            email: user.email,\r\n          },\r\n        },\r\n      });\r\n\r\n      if (result.error) {\r\n        alert.error(result.error.message); // return alert error\r\n        document.querySelector(\"#pay_btn\").disabled = false; // disabled btn\r\n      } else {\r\n        // Thanh toán có được xử lý hay không?\r\n        if (result.paymentIntent.status === \"succeeded\") {\r\n          // if success\r\n\r\n          order.paymentInfo = {\r\n            // payment with info cart, shipInfo\r\n            id: result.paymentIntent.id,\r\n            status: result.paymentIntent.status,\r\n          };\r\n\r\n          dispatch(createOrder(order)); // call createOrder action\r\n\r\n          history.push(\"/success\"); // return page success\r\n        } else {\r\n          alert.error(\"Có một số vấn đề trong khi xử lý thanh toán\");\r\n        }\r\n      }\r\n    } catch (error) {\r\n      // error server\r\n      document.querySelector(\"#pay_btn\").disabled = false;\r\n      alert.error(error.response.data.message);\r\n    }\r\n  };\r\n  const MY_BANK = {\r\n    BANK_ID: \"MB\",\r\n    ACCOUNT_NO: \"0358751727\",\r\n    ACCOUNT_NAME: \"NGUYEN THANH TRUNG\",\r\n  };\r\n\r\n  const QR = `https://img.vietqr.io/image/${MY_BANK.BANK_ID}-${MY_BANK.ACCOUNT_NO}-compact2.png?amount=${orderInfo.totalPrice}&addInfo=DTBV${user._id}${random}&accountName=${MY_BANK.ACCOUNT_NAME}`;\r\n  const checkPaid = () => {\r\n    axios\r\n      .get(\r\n        \"https://script.google.com/macros/s/AKfycbx0tSUnFN3O_PL6Rw2Yf2VseVOK2-8VYi5mUk56sVfmOoTplCPEm78dEIGHwP33srJd/exec\"\r\n      )\r\n      .then((res) => {\r\n        const paid = res.data.data[res.data.data.length - 1];\r\n        setPricePaid(paid[\"Giá trị\"]);\r\n        setContentPaid(paid[\"Mô tả\"]);\r\n      })\r\n      .catch((error) => {\r\n        console.error(\"API call error:\", error);\r\n      });\r\n  };\r\n  useEffect(() => {\r\n    // checkPaid();\r\n    let intervalId;\r\n    intervalId = setInterval(() => {\r\n      checkPaid();\r\n    }, 2000);\r\n    return () => {\r\n      clearInterval(intervalId);\r\n    };\r\n  }, []);\r\n\r\n  useEffect(() => {\r\n    if (\r\n      pricePaid === orderInfo.totalPrice &&\r\n      contentPaid?.replace(\"Thanh toan QR-\", \"\").split(\" \")[0] ===\r\n        `DTBV${user._id}${random}`\r\n    ) {\r\n      dispatch(createOrder(order));\r\n      // submitHandler();\r\n      history.push(\"/success\");\r\n      // clearInterval(intervalId);\r\n    }\r\n  }, [pricePaid, contentPaid]);\r\n  return (\r\n    <div>\r\n      <h3 className=\"title-checkqr\">Thanh toán</h3>\r\n      <div className=\"box\">\r\n        <p className=\"thanks\">Cảm ơn bạn. Đơn hàng của bạn đã được nhận.</p>\r\n        <ul className=\"woocommerce-order-overview woocommerce-thankyou-order-details order_details\">\r\n          <li className=\"woocommerce-order-overview__order order\">\r\n            Mã đơn hàng: <strong>DTBV{user._id}</strong>\r\n          </li>\r\n          <li className=\"woocommerce-order-overview__date date\">\r\n            Ngày: <strong>{today.format(\"DD-MM-yyyy\")}</strong>\r\n          </li>\r\n          <li className=\"woocommerce-order-overview__total total\">\r\n            Tổng cộng:{\" \"}\r\n            <strong>\r\n              <span className=\"woocommerce-Price-amount amount\">\r\n                <bdi>\r\n                  {orderInfo.totalPrice}&nbsp;\r\n                  <span className=\"woocommerce-Price-currencySymbol\">₫</span>\r\n                </bdi>\r\n              </span>\r\n            </strong>\r\n          </li>\r\n          <li className=\"woocommerce-order-overview__payment-method method\">\r\n            Phương thức thanh toán: <strong>Chuyển khoản</strong>\r\n          </li>\r\n        </ul>\r\n        <div className=\"box-qr\">\r\n          <div className=\"titleqr\">Mã QR chuyển khoản ngân hàng</div>\r\n          <div\r\n            style={{ display: \"flex\", justifyContent: \"center\", width: \"100%\" }}\r\n          >\r\n            <img style={{ width: \"300px\" }} src={QR} alt=\"\" />\r\n          </div>\r\n          <table\r\n            className=\"table table-bordered\"\r\n            style={{\r\n              fontSize: \"15px\",\r\n              maxWidth: \"800px\",\r\n              marginLeft: \"auto\",\r\n              marginRight: \"auto\",\r\n            }}\r\n          >\r\n            <tbody>\r\n              <tr className=\"\">\r\n                <td className=\"text-right \" style={{ textAlign: \"right\" }}>\r\n                  <strong style={{ color: \"black\" }}>Tên tài khoản:</strong>\r\n                </td>\r\n                <td\r\n                  className=\"text-left payment-instruction \"\r\n                  style={{ textAlign: \"left\" }}\r\n                >\r\n                  <div>\r\n                    <span style={{ color: \"black\" }}>\r\n                      {MY_BANK.ACCOUNT_NAME}\r\n                    </span>\r\n                  </div>\r\n                </td>\r\n              </tr>\r\n              <tr className=\"\" style={{ background: \"#FBFBFB\" }}>\r\n                <td className=\"text-right \" style={{ textAlign: \"right\" }}>\r\n                  <strong style={{ color: \"black\" }}>Số tài khoản:</strong>\r\n                </td>\r\n                <td\r\n                  className=\"text-left payment-instruction \"\r\n                  style={{ textAlign: \"left\" }}\r\n                >\r\n                  <span style={{ color: \"black\" }}>{MY_BANK.ACCOUNT_NO}</span>\r\n                </td>\r\n              </tr>\r\n              <tr>\r\n                <td className=\"text-right \" style={{ textAlign: \"right\" }}>\r\n                  <strong style={{ color: \"black\" }}>Ngân hàng:</strong>\r\n                </td>\r\n                <td\r\n                  className=\"text-left payment-instruction \"\r\n                  style={{ textAlign: \"left\" }}\r\n                >\r\n                  <div>\r\n                    <span style={{ color: \"black\" }}>{MY_BANK.BANK_ID}</span>\r\n                  </div>\r\n                </td>\r\n              </tr>\r\n              <tr>\r\n                <td className=\"text-right \" style={{ textAlign: \"right\" }}>\r\n                  <strong style={{ color: \"black\" }}>Số tiền:</strong>\r\n                </td>\r\n                <td\r\n                  className=\"text-left payment-instruction \"\r\n                  style={{ textAlign: \"left\" }}\r\n                >\r\n                  <div ng-switch-when=\"vcb\" className=\"ng-scope\">\r\n                    <span style={{ color: \"black\" }}>\r\n                      {orderInfo.totalPrice} <sup>vnđ</sup>\r\n                    </span>\r\n                  </div>\r\n                </td>\r\n              </tr>\r\n              <tr className=\"\">\r\n                <td className=\"text-right \" style={{ textAlign: \"right\" }}>\r\n                  <strong style={{ color: \"black\" }}>Nội dung*:</strong>\r\n                </td>\r\n                <td\r\n                  className=\"text-left payment-instruction \"\r\n                  style={{ textAlign: \"left\" }}\r\n                >\r\n                  <strong style={{ fontSize: \"20px\" }}>\r\n                    DTBV{user._id}\r\n                    {random}\r\n                  </strong>\r\n                </td>\r\n              </tr>\r\n            </tbody>\r\n          </table>\r\n          <div\r\n            style={{\r\n              display: \"flex\",\r\n              width: \"100%\",\r\n              justifyContent: \"center\",\r\n            }}\r\n          >\r\n            <button className=\"btn-pay\">Tôi đã thanh toán</button>\r\n          </div>\r\n        </div>\r\n        {/* <section className=\"woocommerce-order-details\">\r\n          <h2 className=\"woocommerce-order-details__title\">\r\n            Chi tiết đơn hàng\r\n          </h2>\r\n          <table className=\"woocommerce-table woocommerce-table--order-details shop_table order_details\">\r\n            <thead>\r\n              <tr>\r\n                <th className=\"woocommerce-table__product-name product-name\">\r\n                  Sản phẩm\r\n                </th>\r\n                <th className=\"woocommerce-table__product-table product-total\">\r\n                  Tổng\r\n                </th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              {listCart.map((item: any, index: any) => (\r\n                <tr className=\"woocommerce-table__line-item order_item\">\r\n                  <td className=\"woocommerce-table__product-name product-name\">\r\n                    <Link\r\n                      className=\"link\"\r\n                      to=\"https://store.masteranhduc.com/product/sach-truoc-binh-minh/\"\r\n                    >\r\n                      {item.title}\r\n                    </Link>{\" \"}\r\n                    <strong className=\"product-quantity\">\r\n                      ×&nbsp;{item.quantity}\r\n                    </strong>{\" \"}\r\n                  </td>\r\n                  <td className=\"woocommerce-table__product-total product-total\">\r\n                    <span className=\"woocommerce-Price-amount amount\">\r\n                      <bdi>\r\n                        {item.price * item.quantity}&nbsp;\r\n                        <span className=\"woocommerce-Price-currencySymbol\">\r\n                          ₫\r\n                        </span>\r\n                      </bdi>\r\n                    </span>{\" \"}\r\n                  </td>\r\n                </tr>\r\n              ))}\r\n            </tbody>\r\n            <tfoot>\r\n              <tr>\r\n                <th scope=\"row\">Phương thức thanh toán:</th>\r\n                <td>Chuyển khoản</td>\r\n              </tr>\r\n              <tr>\r\n                <th scope=\"row\">Tổng cộng:</th>\r\n                <td>\r\n                  <span className=\"woocommerce-Price-amount amount\">\r\n                    {totalPrice}&nbsp;\r\n                    <span className=\"woocommerce-Price-currencySymbol\">₫</span>\r\n                  </span>\r\n                </td>\r\n              </tr>\r\n            </tfoot>\r\n          </table>\r\n        </section> */}\r\n      </div>\r\n      <button className=\"btnDownloadQR\">\r\n        <div\r\n          style={{\r\n            width: \"100%\",\r\n            display: \"flex\",\r\n            alignItems: \"center\",\r\n            justifyContent: \"flex-start\",\r\n          }}\r\n        >\r\n          <svg\r\n            width=\"32\"\r\n            height=\"32\"\r\n            viewBox=\"0 0 32 32\"\r\n            fill=\"none\"\r\n            xmlns=\"http://www.w3.org/2000/svg\"\r\n          >\r\n            <path d=\"M3 3H11V1H1V11H3V3Z\" fill=\"white\"></path>\r\n            <path d=\"M11 11V5H5V11H11ZM7 7H9V9H7V7Z\" fill=\"white\"></path>\r\n            <path d=\"M20.5 3H29V11H31V1H20.5V3Z\" fill=\"white\"></path>\r\n            <path d=\"M27 11V5H21V11H27ZM23 7H25V9H23V7Z\" fill=\"white\"></path>\r\n            <path d=\"M11 29H3V21H1V31H11V29Z\" fill=\"white\"></path>\r\n            <path d=\"M11 21H5V27H11V21ZM9 25H7V23H9V25Z\" fill=\"white\"></path>\r\n            <path d=\"M29 29H20.5V31H31V21H29V29Z\" fill=\"white\"></path>\r\n            <path d=\"M17 19H25V23H27V17H17V19Z\" fill=\"white\"></path>\r\n            <path d=\"M27 27V25H15V17H5V19H13V27H27Z\" fill=\"white\"></path>\r\n            <path d=\"M13 5H15V11H13V5Z\" fill=\"white\"></path>\r\n            <path d=\"M5 15H19V5H17V13H5V15Z\" fill=\"white\"></path>\r\n            <path d=\"M21 13H27V15H21V13Z\" fill=\"white\"></path>\r\n            <path d=\"M21 21H23V23H21V21Z\" fill=\"white\"></path>\r\n            <path d=\"M17 21H19V23H17V21Z\" fill=\"white\"></path>\r\n          </svg>\r\n          <div style={{ marginLeft: \"16px\", textAlign: \"left\" }}>\r\n            <span\r\n              style={{\r\n                display: \"block\",\r\n                fontSize: \"16px\",\r\n                fontWeight: \"bold\",\r\n              }}\r\n            >\r\n              LƯU ẢNH QR\r\n            </span>\r\n            <span style={{ fontSize: \"12px\" }}>\r\n              <i> Sau đó mở App ngân hàng quét QR chuyển khoản</i>\r\n            </span>\r\n          </div>\r\n        </div>\r\n      </button>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default Payment;\r\n",
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\order\\OrderDetails.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\Login.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\UpdateProfile.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\ConfirmOrder.js",
+  [
+    "232",
+    "233"
+  ],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\Profile.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\LookAccount.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\order\\ListOrders.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\NewProduct.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\Dashboard.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ProductsList.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ProcessOrder.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ProductReviews.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\UpdateUser.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\UsersList.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\UpdateProduct.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\route\\ProtectedRoute.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\UpdatePassword.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\OrdersList.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\userActions.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\user\\Register.js",
+  [
+    "234",
+    "235"
+  ],
+  "import React, { Fragment, useState, useEffect } from \"react\";\r\nimport { Link } from \"react-router-dom\";\r\nimport MetaData from \"../layout/MetaData\";\r\nimport Loader from \"../layout/Loader\";\r\n\r\nimport { useAlert } from \"react-alert\";\r\nimport { useDispatch, useSelector } from \"react-redux\";\r\nimport { register, clearErrors } from \"../../actions/userActions\";\r\n\r\nconst Register = ({ history }) => {\r\n  const [user, setUser] = useState({\r\n    name: \"\",\r\n    email: \"\",\r\n    password: \"\",\r\n  });\r\n\r\n  const { name, email, password } = user;\r\n\r\n  const [avatar, setAvatar] = useState(\"\");\r\n  const [avatarPreview, setAvatarPreview] = useState(\r\n    \"/images/default_avatar.jpg\"\r\n  );\r\n\r\n  const alert = useAlert();\r\n  const dispatch = useDispatch();\r\n\r\n  const { isAuthenticated, error, loading } = useSelector(\r\n    (state) => state.auth\r\n  );\r\n\r\n  useEffect(() => {\r\n    if (isAuthenticated) {\r\n      history.push(\"/\");\r\n    }\r\n\r\n    if (error) {\r\n      alert.error(error);\r\n      dispatch(clearErrors());\r\n    }\r\n  }, [dispatch, alert, isAuthenticated, error, history]);\r\n\r\n  const submitHandler = (e) => {\r\n    e.preventDefault();\r\n\r\n    const formData = new FormData();\r\n    formData.set(\"name\", name);\r\n    formData.set(\"email\", email);\r\n    formData.set(\"password\", password);\r\n\r\n    dispatch(register(formData));\r\n  };\r\n\r\n  const onChange = (e) => {\r\n    if (e.target.name === \"avatar\") {\r\n      const reader = new FileReader();\r\n\r\n      reader.onload = () => {\r\n        if (reader.readyState === 2) {\r\n          setAvatarPreview(reader.result);\r\n          setAvatar(reader.result);\r\n        }\r\n      };\r\n\r\n      reader.readAsDataURL(e.target.files[0]);\r\n    } else {\r\n      setUser({ ...user, [e.target.name]: e.target.value });\r\n    }\r\n  };\r\n\r\n  return (\r\n    <Fragment>\r\n      <MetaData title={\"Đăng ký\"} />\r\n\r\n      <div className=\"container mt-5\">\r\n        <div className=\"row justify-content-center\">\r\n          <div className=\"col-md-6 mt-5\">\r\n            <form\r\n              className=\"shadow-lg p-3 mb-5 bg-body-tertiary rounded\"\r\n              onSubmit={submitHandler}\r\n              encType=\"multipart/form-data\"\r\n            >\r\n              <h1 className=\"mb-4 text-center\">Đăng ký</h1>\r\n\r\n              <div className=\"mb-3\">\r\n                <label htmlFor=\"name_field\" className=\"form-label\">\r\n                  Tên\r\n                </label>\r\n                <input\r\n                  type=\"text\"\r\n                  id=\"name_field\"\r\n                  className=\"form-control\"\r\n                  name=\"name\"\r\n                  value={name}\r\n                  onChange={onChange}\r\n                />\r\n              </div>\r\n\r\n              <div className=\"mb-3\">\r\n                <label htmlFor=\"email_field\" className=\"form-label\">\r\n                  Email\r\n                </label>\r\n                <input\r\n                  type=\"email\"\r\n                  id=\"email_field\"\r\n                  className=\"form-control\"\r\n                  name=\"email\"\r\n                  value={email}\r\n                  onChange={onChange}\r\n                />\r\n              </div>\r\n\r\n              <div className=\"mb-3\">\r\n                <label htmlFor=\"password_field\" className=\"form-label\">\r\n                  Mật khẩu\r\n                </label>\r\n                <input\r\n                  type=\"password\"\r\n                  id=\"password_field\"\r\n                  className=\"form-control\"\r\n                  name=\"password\"\r\n                  value={password}\r\n                  onChange={onChange}\r\n                />\r\n              </div>\r\n\r\n              {loading ? (\r\n                <Loader />\r\n              ) : (\r\n                <button\r\n                  id=\"register_button\"\r\n                  type=\"submit\"\r\n                  className=\"btn btn-primary btn-block py-2\"\r\n                  disabled={loading ? true : false}\r\n                >\r\n                  ĐĂNG KÝ\r\n                </button>\r\n              )}\r\n\r\n              <div className=\"text-center mt-3\">\r\n                <Link to=\"/login\" className=\"text-decoration-none\">\r\n                  Đã có tài khoản? Đăng nhập ngay\r\n                </Link>\r\n              </div>\r\n            </form>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </Fragment>\r\n  );\r\n};\r\n\r\nexport default Register;\r\n",
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\MetaData.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\product\\Product.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\cartActions.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\productActions.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Loader.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Slider.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\layout\\Search.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\cart\\CheckoutSteps.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\orderActions.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\Sidebar.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\ChartIncome.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\userConstants.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\productConstants.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\orderConstants.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\constants\\cartConstants.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\review\\ListReviews.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\actions\\paymentActions.js",
+  [],
+  "D:\\tạp hoá\\Fruit2\\frontend\\src\\components\\admin\\Chart.js",
+  [],
+  {
+    "ruleId": "236",
+    "replacedBy": "237"
+  },
+  {
+    "ruleId": "238",
+    "replacedBy": "239"
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "241",
+    "line": 2,
+    "column": 10,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 2,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "244",
+    "line": 20,
+    "column": 9,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 20,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "245",
+    "line": 1,
+    "column": 17,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 1,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "246",
+    "line": 3,
+    "column": 8,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 3,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "247",
+    "line": 4,
+    "column": 8,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 4,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "248",
+    "line": 15,
+    "column": 3,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 15,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "249",
+    "line": 16,
+    "column": 3,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 16,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "250",
+    "line": 21,
+    "column": 10,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 21,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "251",
+    "line": 23,
+    "column": 7,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 23,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "252",
+    "line": 76,
+    "column": 9,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 76,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "253",
+    "severity": 1,
+    "message": "254",
+    "line": 183,
+    "column": 6,
+    "nodeType": "255",
+    "endLine": 183,
+    "endColumn": 30,
+    "suggestions": "256"
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "257",
+    "line": 6,
+    "column": 23,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 6,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "258",
+    "line": 18,
+    "column": 9,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 18,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "259",
+    "line": 19,
+    "column": 10,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 19,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "240",
+    "severity": 1,
+    "message": "260",
+    "line": 20,
+    "column": 10,
+    "nodeType": "242",
+    "messageId": "243",
+    "endLine": 20,
+    "endColumn": 23
+  },
+  "no-native-reassign",
+  [
+    "261"
+  ],
+  "no-negated-in-lhs",
+  [
+    "262"
+  ],
+  "no-unused-vars",
+  "'Link' is defined but never used.",
+  "Identifier",
+  "unusedVar",
+  "'next' is assigned a value but never used.",
+  "'Fragment' is defined but never used.",
+  "'MetaData' is defined but never used.",
+  "'CheckoutSteps' is defined but never used.",
+  "'CardExpiryElement' is defined but never used.",
+  "'CardCvcElement' is defined but never used.",
+  "'use' is defined but never used.",
+  "'options' is assigned a value but never used.",
+  "'submitHandler' is assigned a value but never used.",
+  "react-hooks/exhaustive-deps",
+  "React Hook useEffect has missing dependencies: 'dispatch', 'history', 'order', 'orderInfo.totalPrice', 'random', and 'user._id'. Either include them or remove the dependency array.",
+  "ArrayExpression",
+  [
+    "263"
+  ],
+  "'clearErrors' is defined but never used.",
+  "'order' is assigned a value but never used.",
+  "'avatar' is assigned a value but never used.",
+  "'avatarPreview' is assigned a value but never used.",
+  "no-global-assign",
+  "no-unsafe-negation",
+  {
+    "desc": "264",
+    "fix": "265"
+  },
+  "Update the dependencies array to be: [pricePaid, contentPaid, orderInfo.totalPrice, user._id, random, dispatch, order, history]",
+  {
+    "range": "266",
+    "text": "267"
+  },
+  [
+    5280,
+    5304
+  ],
+  "[pricePaid, contentPaid, orderInfo.totalPrice, user._id, random, dispatch, order, history]"
+]
