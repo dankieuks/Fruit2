@@ -35,7 +35,6 @@ const ConfirmOrder = ({ history }) => {
     const orderInfo = {
       itemsPrice: formatToNumber(itemsPrice),
       shippingPrice: formatToNumber(shippingPrice),
-
       totalPrice: formatToNumber(totalPrice),
       paymentMethod,
     };
@@ -43,15 +42,31 @@ const ConfirmOrder = ({ history }) => {
     sessionStorage.setItem("orderInfo", JSON.stringify(orderInfo));
 
     if (paymentMethod === "momo") {
-      dispatch(processPaymentMomo(orderInfo));
+      dispatch(
+        processPaymentMomo(orderInfo, cartItems, shippingInfo, createOrder)
+      );
     } else if (paymentMethod === "zalopay") {
-      dispatch(processPaymentZalo(orderInfo));
+      dispatch(
+        processPaymentZalo(orderInfo, cartItems, shippingInfo, createOrder)
+      );
     } else if (paymentMethod === "cod") {
-      dispatch(createOrder(order));
+      const order = {
+        orderItems: cartItems,
+        shippingInfo,
+        itemsPrice: orderInfo.itemsPrice,
+        shippingPrice: orderInfo.shippingPrice,
+        totalPrice: orderInfo.totalPrice,
+        paymentMethod: "COD",
+        paymentInfo: {
+          id: "COD",
+          status: "Not Paid",
+        },
+      };
 
-      // Handle Cash on Delivery (COD)
+      dispatch(createOrder(order));
       history.push("/success");
     } else {
+      window.location.reload();
       history.push("/payment");
     }
   };
@@ -80,9 +95,9 @@ const ConfirmOrder = ({ history }) => {
           <h4 className="mt-4">Các mặt hàng trong giỏ hàng của bạn:</h4>
 
           {cartItems.map((item) => (
-            <Fragment>
+            <Fragment key={item.product}>
               <hr />
-              <div className="cart-item my-1" key={item.product}>
+              <div className="cart-item my-1">
                 <div className="row">
                   <div className="col-4 col-lg-2">
                     <img src={item.image} alt="Laptop" height="45" width="65" />

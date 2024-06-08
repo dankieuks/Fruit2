@@ -28,7 +28,7 @@ const config = {
 exports.zaloPay = catchAsyncErrors(async (req, res) => {
   const { totalPrice } = req.body;
   const embed_data = {
-    redirecturl: "http://localhost:3000/",
+    redirecturl: "http://localhost:3000/success",
   };
 
   const items = [{}];
