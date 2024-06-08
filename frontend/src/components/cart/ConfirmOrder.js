@@ -54,6 +54,7 @@ const ConfirmOrder = ({ history }) => {
       dispatch(createOrder(order));
       history.push("/success");
     } else {
+      window.location.reload();
       history.push("/payment");
     }
   };

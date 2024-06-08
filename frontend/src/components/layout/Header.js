@@ -47,7 +47,7 @@ const Header = () => {
                 Giỏ hàng
               </span>
               <span className="ml-1" id="cart_count">
-                <i class="bi bi-cart4"></i>
+                <i className="bi bi-cart4"></i>
                 {cartItems.length}
               </span>
             </Link>
