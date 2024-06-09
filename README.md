@@ -1,6 +1,6 @@
-# Nhóm 5
+# Nhóm 4
 
-# Đề tài: Website bán hàng trực tuyến
+# Đề tài: Website CỬA HÀNG BÁCH HÓA
 
 Phiên bản Node.js sử dụng là Node.js v16.13.1 (hoặc phiên bản v16 cùng cấp)
 
