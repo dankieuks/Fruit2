@@ -41,7 +41,7 @@ exports.zaloPay = catchAsyncErrors(async (req, res) => {
     item: JSON.stringify(items),
     embed_data: JSON.stringify(embed_data),
     amount: totalPrice,
-    description: `Lazada - Payment for the order #${transID}`,
+    description: `Bach Hoa- Payment for the order #${transID}`,
     bank_code: "",
     callback:
       "https://de06-2402-800-6105-34ae-48d3-3295-9365-c2fe.ngrok-free.app/api/v1/callbackzalo",

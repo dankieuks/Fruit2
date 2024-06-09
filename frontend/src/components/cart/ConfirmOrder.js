@@ -3,16 +3,22 @@ import { Link } from "react-router-dom";
 
 import MetaData from "../layout/MetaData";
 import CheckoutSteps from "./CheckoutSteps";
+import { createOrder, clearErrors } from "../../actions/orderActions";
 
 import { useSelector, useDispatch } from "react-redux";
-import { processPaymentMomo } from "../../actions/paymentActions";
-import { createOrder } from "../../actions/orderActions"; // Import createOrder action
+import {
+  processPaymentMomo,
+  processPaymentZalo,
+} from "../../actions/paymentActions";
 
 const ConfirmOrder = ({ history }) => {
   const dispatch = useDispatch();
   const { cartItems, shippingInfo } = useSelector((state) => state.cart);
   const { user } = useSelector((state) => state.auth);
-
+  const order = {
+    orderItems: cartItems,
+    shippingInfo,
+  };
   const itemsPrice = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0
@@ -36,7 +42,13 @@ const ConfirmOrder = ({ history }) => {
     sessionStorage.setItem("orderInfo", JSON.stringify(orderInfo));
 
     if (paymentMethod === "momo") {
-      dispatch(processPaymentMomo(orderInfo));
+      dispatch(
+        processPaymentMomo(orderInfo, cartItems, shippingInfo, createOrder)
+      );
+    } else if (paymentMethod === "zalopay") {
+      dispatch(
+        processPaymentZalo(orderInfo, cartItems, shippingInfo, createOrder)
+      );
     } else if (paymentMethod === "cod") {
       const order = {
         orderItems: cartItems,
@@ -54,7 +66,6 @@ const ConfirmOrder = ({ history }) => {
       dispatch(createOrder(order));
       history.push("/success");
     } else {
-      window.location.reload();
       history.push("/payment");
     }
   };
