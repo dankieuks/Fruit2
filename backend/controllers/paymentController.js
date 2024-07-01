@@ -122,7 +122,7 @@ exports.processPaymentMomo = catchAsyncErrors(async (req, res, next) => {
 
   var orderInfo = "pay with MoMo";
   var partnerCode = "MOMO";
-  var redirectUrl = "https://webhook.site/b3088a6a-2d17-4f8d-a383-71389a6c600b";
+  var redirectUrl = "http://localhost:3000/success";
   var ipnUrl =
     " https://de06-2402-800-6105-34ae-48d3-3295-9365-c2fe.ngrok-free.app/api/v1/callback";
   var requestType = "payWithMethod";
